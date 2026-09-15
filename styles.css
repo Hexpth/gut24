@@ -1,21 +1,21 @@
 /**
- * GutMap 24 — Таблица стилей интерфейса анализа микробиома
- * Шрифты: DM Sans (для текста), Manrope (для заголовков)
+ * GutMap 24 — Microbiome Analysis Interface Stylesheet
+ * Typography: DM Sans (for body text), Manrope (for headings)
  */
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 /* ==========================================================================
-   1. ГЛОБАЛЬНЫЕ НАСТРОЙКИ И ПЕРЕМЕННЫЕ
+   1. GLOBAL STYLES & VARIABLES
    ========================================================================== */
 :root {
     color-scheme: light;
-    --ink: #091a30;           /* Основной темный текст */
-    --deep: #0c2139;          /* Глубокий синий фон блоков */
-    --mint: #4fe2c2;          /* Акцентный мятный цвет */
-    --paper: #f6f9fb;         /* Светлый фон подложек */
-    --muted: #526579;         /* Серый приглушенный текст */
-    --line: #dce6ed;          /* Цвет разделительных линий */
+    --ink: #091a30;           /* Main dark text */
+    --deep: #0c2139;          /* Deep blue container background */
+    --mint: #4fe2c2;          /* Accent mint color */
+    --paper: #f6f9fb;         /* Light background panels */
+    --muted: #526579;         /* Gray muted text */
+    --line: #dce6ed;          /* Split/divider line color */
 }
 
 * {
@@ -39,14 +39,14 @@ a {
     color: inherit;
 }
 
-/* Ограничитель ширины контента по центру страницы */
+/* Page content max-width wrapper */
 .wrap {
     width: min(1200px, calc(100% - 64px));
     margin-inline: auto;
 }
 
 /* ==========================================================================
-   2. ТИПОГРАФИКА
+   2. TYPOGRAPHY
    ========================================================================== */
 h1, h2, h3, p {
     margin-top: 0;
@@ -92,7 +92,7 @@ em {
 }
 
 /* ==========================================================================
-   3. ШАПКА САЙТА (HEADER & NAVIGATION)
+   3. SITE HEADER & NAVIGATION
    ========================================================================== */
 .site-header {
     height: 88px;
@@ -155,7 +155,7 @@ em {
 }
 
 /* ==========================================================================
-   4. КНОПКИ И ССЫЛКИ
+   4. BUTTONS & LINKS
    ========================================================================== */
 .button {
     display: inline-flex;
@@ -194,7 +194,7 @@ em {
 }
 
 /* ==========================================================================
-   5. ГЛАВНЫЙ ЭКРАН (HERO SECTION)
+   5. HERO SECTION
    ========================================================================== */
 .hero {
     min-height: 685px;
@@ -227,7 +227,7 @@ em {
 }
 
 /* ==========================================================================
-   6. ВИЗУАЛИЗАЦИЯ ТАКСОНОВ И ИНФОГРАФИКА МИКРОБИОМА
+   6. TAXON VISUALIZATION & MICROBIOME INFOGRAPHICS
    ========================================================================== */
 .hero-visual {
     background: var(--deep);
@@ -288,7 +288,7 @@ em {
     margin-bottom: 14px;
 }
 
-/* Строки графиков относительного обилия бактерий */
+/* Rows for bacterial relative abundance charts */
 .plot-row {
     display: grid;
     grid-template-columns: 96px 1fr 48px;
@@ -309,7 +309,7 @@ em {
     background: linear-gradient(#37536a, #37536a) center/100% 1px no-repeat;
 }
 
-/* Коридор референсных значений */
+/* Reference value range band */
 .reference-band {
     position: absolute;
     left: 39%;
@@ -330,7 +330,7 @@ em {
     background: #a7d9d0;
 }
 
-/* Точки обнаруженных значений обилия */
+/* Observed abundance markers */
 .observed-dot {
     position: absolute;
     top: 8px;
@@ -392,7 +392,7 @@ em {
 }
 
 /* ==========================================================================
-   7. СЕКЦИИ И СТРАНИЦЫ ИНТЕРФЕЙСА
+   7. INTERFACE SECTIONS & PAGES
    ========================================================================== */
 .promise {
     background: #e9f7f4;
@@ -429,7 +429,7 @@ em {
     color: var(--muted);
 }
 
-/* Шаги научного анализа */
+/* Scientific analysis workflow steps */
 .science-steps {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -461,7 +461,7 @@ em {
     color: var(--muted);
 }
 
-/* Двухколоночный блок с графикой научного контента */
+/* Two-column feature layouts */
 .science-feature {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -503,7 +503,7 @@ em {
 }
 
 /* ==========================================================================
-   8. КОМПОНЕНТЫ И КАРТОЧКИ (ПРОТОТИП / ДЕМО / КЕЙСЫ)
+   8. COMPONENTS & CARDS (PROTOTYPE / DEMO / CASES)
    ========================================================================== */
 .prototype {
     background: var(--deep);
@@ -536,7 +536,7 @@ em {
     margin-top: 15px;
 }
 
-/* Карточка интерактивной демонстрации данных */
+/* Data simulation interactive demo card */
 .demo-card {
     background: #17344d;
     border: 1px solid #31536b;
@@ -596,7 +596,7 @@ em {
     color: #9eb8c7 !important;
 }
 
-/* Блок доказательной базы / статистики (Proof Section) */
+/* Evidence section stats grid */
 .proof {
     padding-block: 110px;
 }
@@ -634,7 +634,7 @@ em {
     font-size: .95rem;
 }
 
-/* Карточка клинических кейсов для врачей */
+/* Clinical case study cards for medical professionals */
 .clinician-case {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -661,7 +661,6 @@ em {
 }
 
 .clinician-case a {
-    text-decoration-color: #1da78c;
     text-underline-offset: 3px;
 }
 
@@ -673,7 +672,7 @@ em {
 }
 
 /* ==========================================================================
-   9. ФОРМА ОБРАТНОЙ СВЯЗИ / КЛИНИЧЕСКИЕ ИСПЫТАНИЯ (TRIAL CARD)
+   9. TRIAL REGISTRATION FORM CARD
    ========================================================================== */
 .trial-card {
     background: #e9f7f4;
@@ -741,7 +740,7 @@ em {
 }
 
 /* ==========================================================================
-   10. ПОДВАЛ (FOOTER) И КОМАНДА
+   10. SITE FOOTER & PROJECT TEAM
    ========================================================================== */
 .closing {
     padding: 90px 0 110px;
@@ -778,7 +777,7 @@ em {
     margin: 8px 0 0;
 }
 
-/* Список ссылок на команду/авторов проекта */
+/* Contributors/authors grid */
 .team-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -806,10 +805,10 @@ em {
 }
 
 /* ==========================================================================
-   11. АДАПТИВНОСТЬ И МЕДИА-ЗАПРОСЫ (RESPONSIVE DESIGN)
+   11. RESPONSIVE DESIGN & MEDIA QUERIES
    ========================================================================== */
 
-/* Планшеты (до 900px) */
+/* Tablets (up to 900px) */
 @media (max-width: 900px) {
     .hero {
         grid-template-columns: 1fr;
@@ -850,7 +849,7 @@ em {
     }
 }
 
-/* Крупные мобильные телефоны (до 680px) */
+/* Mobile Devices (up to 680px) */
 @media (max-width: 680px) {
     .wrap {
         width: min(100% - 36px, 1200px);
@@ -862,7 +861,7 @@ em {
         font-size: 1.05rem;
     }
     .site-header nav a:not(.nav-cta) {
-        display: none; /* Скрытие ссылок меню, оставляем только CTA */
+        display: none; /* Hide primary links, retain CTA */
     }
     .nav-cta {
         padding: 9px 12px;
