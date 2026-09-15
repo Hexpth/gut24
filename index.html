@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -10,49 +10,404 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav>
-  <a href="#science">The science</a>
-  <a href="#works">How it works</a>
-  
-  <button id="lang-toggle" class="nav-cta" style="cursor:pointer; background:none; font-family:inherit;">RU</button>
-</nav>
 
+  <!-- SITE HEADER -->
   <header class="site-header wrap">
-    <a class="brand" href="#top" aria-label="GutMap 24 home"><span class="brand-mark">G<span>24</span></span><span>GutMap <b>24</b></span></a>
-    <nav aria-label="Main navigation"><a href="#science">The science</a><a href="#prototype">How it works</a><a class="nav-cta" href="https://gut-daily-app.biologyinernational2.chatgpt.site/analysis" target="_blank" rel="noopener noreferrer">Explore prototype <span aria-hidden="true">↗</span></a></nav>
+    <a href="#" class="brand">
+      <div class="brand-mark">G<span>24</span></div>
+      <span>GutMap 24</span>
+    </a>
+    <nav>
+      <a href="#science" data-lang-key="nav-science">The science</a>
+      <a href="#works" data-lang-key="nav-works">How it works</a>
+      <a href="#prototype" class="nav-cta" data-lang-key="nav-prototype">Explore prototype ↗</a>
+      <!-- LANGUAGE SWITCHER BUTTON -->
+      <button id="lang-toggle" class="nav-cta" style="cursor:pointer; background:none; font-family:inherit; font-weight:700; margin-left:10px;">RU</button>
+    </nav>
   </header>
 
-  <main id="top">
-    <section class="hero wrap" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow">TEAM 24 · PERSONALIZED MICROBIOME REFERENCE</p>
-        <h1 id="hero-title">A better recommendation for <em>every gut.</em></h1>
-        <p class="hero-lead">Microbiome reports often compare everyone with the same average. GutMap 24 makes the comparison more relevant: a healthy reference adjusted for age, sex, and BMI, with uncertainty shown alongside each result.</p>
-        <div class="hero-actions"><a class="button button-primary" href="https://gut-daily-app.biologyinernational2.chatgpt.site/analysis" target="_blank" rel="noopener noreferrer">Try the research prototype <span aria-hidden="true">↗</span></a><a class="text-link" href="#science">See the approach <span aria-hidden="true">↓</span></a></div>
-        <p class="hero-note">Research prototype · Not a clinical diagnostic tool</p>
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero wrap">
+      <div>
+        <div class="eyebrow" data-lang-key="hero-eyebrow">TEAM 24 · PERSONALIZED MICROBIOME REFERENCE</div>
+        <h1 data-lang-key="hero-title">A better recommendation for <em>every gut.</em></h1>
+        <p class="hero-lead" data-lang-key="hero-lead">Microbiome reports often compare everyone with the same average. GutMap 24 makes the comparison more relevant: a healthy reference adjusted for age, sex, and BMI, with uncertainty shown alongside each result.</p>
+        <div class="hero-actions">
+          <a href="#prototype" class="button button-primary" data-lang-key="btn-try">Try the research prototype ↗</a>
+          <a href="#science" class="text-link" data-lang-key="btn-see">See the approach ↓</a>
+        </div>
+        <p class="hero-note" data-lang-key="hero-note">Research prototype · Not a clinical diagnostic tool</p>
       </div>
-      <div class="hero-visual" aria-label="Example of an observed microbiome profile compared with a personalized healthy reference">
-        <div class="visual-top"><span>PERSONALIZED REFERENCE</span><span>EXAMPLE VIEW</span></div>
-        <div class="visual-person"><div class="avatar">01</div><div><b>One person. A more relevant comparison.</b><small>Age 37 · Male · BMI 31</small></div></div>
-        <div class="axis-labels"><span>BELOW REFERENCE</span><span>EXPECTED</span><span>ABOVE REFERENCE</span></div>
-        <div class="plot-row"><div class="taxon">Species A</div><div class="plot"><span class="reference-band"></span><span class="reference-tick"></span><span class="observed-dot dot-left"></span></div><span class="plot-tag">Below</span></div>
-        <div class="plot-row"><div class="taxon">Species B</div><div class="plot"><span class="reference-band"></span><span class="reference-tick"></span><span class="observed-dot dot-middle"></span></div><span class="plot-tag neutral">Within</span></div>
-        <div class="plot-row"><div class="taxon">Species C</div><div class="plot"><span class="reference-band"></span><span class="reference-tick"></span><span class="observed-dot dot-right"></span></div><span class="plot-tag">Above</span></div>
-        <div class="visual-legend"><span><i class="legend-band"></i> Healthy reference interval</span><span><i class="legend-dot"></i> Observed profile</span></div>
-        <p class="visual-caveat">Illustrative layout; not a patient result.</p>
+
+      <!-- VISUALIZATION EXAMPLE -->
+      <div class="hero-visual">
+        <div class="visual-top">
+          <span data-lang-key="vis-title">PERSONALIZED REFERENCE EXAMPLE VIEW</span>
+          <span>01</span>
+        </div>
+        <div class="visual-person">
+          <div class="avatar">G<span>24</span></div>
+          <div>
+            <b data-lang-key="vis-person-title">One person. A more relevant comparison.</b>
+            <small data-lang-key="vis-person-meta">Age 37 · Male · BMI 31</small>
+          </div>
+        </div>
+        <div class="axis-labels">
+          <span data-lang-key="vis-label-below">BELOW REFERENCE</span>
+          <span data-lang-key="vis-label-expected">EXPECTED</span>
+          <span data-lang-key="vis-label-above">ABOVE REFERENCE</span>
+        </div>
+        
+        <!-- Plot Row 1 -->
+        <div class="plot-row">
+          <div class="taxon">Species A</div>
+          <div class="plot">
+            <div class="reference-band"></div>
+            <div class="reference-tick"></div>
+            <div class="observed-dot" style="left:22%;"></div>
+          </div>
+          <div class="plot-tag" data-lang-key="vis-status-below">Below</div>
+        </div>
+        <!-- Plot Row 2 -->
+        <div class="plot-row">
+          <div class="taxon">Species B</div>
+          <div class="plot">
+            <div class="reference-band"></div>
+            <div class="reference-tick"></div>
+            <div class="observed-dot" style="left:53%;"></div>
+          </div>
+          <div class="plot-tag neutral" data-lang-key="vis-status-within">Within</div>
+        </div>
+        <!-- Plot Row 3 -->
+        <div class="plot-row">
+          <div class="taxon">Species C</div>
+          <div class="plot">
+            <div class="reference-band"></div>
+            <div class="reference-tick"></div>
+            <div class="observed-dot" style="left:79%;"></div>
+          </div>
+          <div class="plot-tag" data-lang-key="vis-status-above">Above</div>
+        </div>
+
+        <div class="visual-legend">
+          <span><div class="legend-band"></div> <span data-lang-key="vis-leg-ref">Healthy reference interval</span></span>
+          <span><div class="legend-dot"></div> <span data-lang-key="vis-leg-obs">Observed profile</span></span>
+        </div>
+        <div class="visual-caveat" data-lang-key="vis-caveat">Illustrative layout; not a patient result.</div>
       </div>
     </section>
 
-    <section class="promise" aria-labelledby="promise-title"><div class="wrap promise-inner"><p class="section-index">01 / THE PROMISE</p><h2 id="promise-title">Make microbiome data <em>personally meaningful.</em></h2><p>We turn a long list of microbial abundances into a clear, person-specific comparison. For doctors, gastroenterologists, and nutritionists, a visible reference and uncertainty estimate can make a report easier to scrutinize instead of asking them to trust an unexplained “normal” range.</p></div></section>
+    <!-- SECTION 01: THE PROMISE -->
+    <section class="promise" id="science">
+      <div class="promise-inner wrap">
+        <div class="section-index">01 / THE PROMISE</div>
+        <h2 data-lang-key="promise-title">Make microbiome data <em>personally meaningful.</em></h2>
+        <p data-lang-key="promise-lead">We turn a long list of microbial abundances into a clear, person-specific comparison. For doctors, gastroenterologists, and nutritionists, a visible reference and uncertainty estimate can make a report easier to scrutinize instead of asking them to trust an unexplained “normal” range.</p>
+      </div>
+    </section>
 
-    <section class="science wrap" id="science" aria-labelledby="science-title"><div class="science-feature"><div class="section-heading"><p class="section-index">02 / THE SECRET SAUCE</p><h2 id="science-title">A reference built around the person, not the population average.</h2><p>Our model learns from healthy adult stool samples and estimates the expected microbiome composition for someone with the same age, sex, and BMI. It then compares an individual profile with that conditional reference, species by species.</p></div><figure class="science-figure"><img src="personalized-reference.png" alt="Illustration contrasting one general microbiome average with a personalized reference that includes an uncertainty band" width="1774" height="887"><figcaption><span>One average for everyone</span><span>A reference tailored to the person</span></figcaption></figure></div><div class="science-steps"><article><span class="step-num">01</span><h3>Start with a profile</h3><p>Upload relative-abundance data from a microbiome sample, along with basic demographic inputs.</p></article><article><span class="step-num">02</span><h3>Build a personal baseline</h3><p>Estimate a healthy reference adjusted for age, sex, and BMI—not a single fixed range for everyone.</p></article><article><span class="step-num">03</span><h3>See the displacement</h3><p>Highlight species above or below their reference and show uncertainty from out-of-study validation.</p></article></div></section>
+    <!-- SECTION 02: THE SECRET SAUCE -->
+    <section class="science wrap">
+      <div class="science-feature">
+        <div>
+          <div class="section-index">02 / THE SECRET SAUCE</div>
+          <h2 data-lang-key="sauce-title">A reference built around the person, not the population average.</h2>
+          <p data-lang-key="sauce-lead">Our model learns from healthy adult stool samples and estimates the expected microbiome composition for someone with the same age, sex, and BMI. It then compares an individual profile with that conditional reference, species by species.</p>
+        </div>
+        <figure class="science-figure">
+          <div style="padding:40px; text-align:center; color:#bce2dc; font-weight:700;" data-lang-key="fig-placeholder">
+            [ Illustration contrasting one general microbiome average with a personalized reference that includes an uncertainty band ]
+          </div>
+          <figcaption>
+            <span data-lang-key="fig-cap-left">One average for everyone</span>
+            <span data-lang-key="fig-cap-right">A reference tailored to the person</span>
+          </figcaption>
+        </figure>
+      </div>
 
-    <section class="prototype" id="prototype" aria-labelledby="prototype-title"><div class="wrap prototype-inner"><div><p class="section-index">03 / SEE IT WORK</p><h2 id="prototype-title">From a sample file to a clearer comparison.</h2><p>Open the interactive research prototype, load the included cMD3 example, and see how an observed profile is compared with its personalized reference. No sample file needed to explore the demo.</p><a class="button button-light" href="https://gut-daily-app.biologyinernational2.chatgpt.site/analysis" target="_blank" rel="noopener noreferrer">Open the prototype <span aria-hidden="true">↗</span></a></div><div class="demo-card"><div class="demo-bar"><span class="demo-dot"></span><span class="demo-dot"></span><span class="demo-dot"></span><span>RESEARCH PROTOTYPE</span></div><div class="demo-flow"><div><b>01</b><span>Load cMD3 example</span></div><div><b>02</b><span>Set age, sex &amp; BMI</span></div><div><b>03</b><span>Compare with reference</span></div></div><p>Explore the model with a de-identified example profile.</p></div></div></section>
+      <!-- steps -->
+      <div class="science-steps" id="works">
+        <article>
+          <span class="step-num">01</span>
+          <h3 data-lang-key="step1-title">Start with a profile</h3>
+          <p data-lang-key="step1-text">Upload relative-abundance data from a microbiome sample, along with basic demographic inputs.</p>
+        </article>
+        <article>
+          <span class="step-num">02</span>
+          <h3 data-lang-key="step2-title">Build a personal baseline</h3>
+          <p data-lang-key="step2-text">Estimate a healthy reference adjusted for age, sex, and BMI—not a single fixed range for everyone.</p>
+        </article>
+        <article>
+          <span class="step-num">03</span>
+          <h3 data-lang-key="step3-title">See the displacement</h3>
+          <p data-lang-key="step3-text">Highlight species above or below their reference and show uncertainty from out-of-study validation.</p>
+        </article>
+      </div>
+    </section>
 
-    <section class="proof wrap" aria-labelledby="proof-title"><div class="section-heading"><p class="section-index">04 / WHY BELIEVE IT</p><h2 id="proof-title">Built for the questions clinicians actually ask.</h2></div><div class="clinician-case"><div><span class="case-label">THE CLINICAL TRUST GAP</span><h3>“What is this result being compared with?”</h3><p>A 2025 <a href="https://pubmed.ncbi.nlm.nih.gov/39647502/" target="_blank" rel="noopener noreferrer">international consensus statement in <em>The Lancet Gastroenterology &amp; Hepatology</em></a> cautioned that many commercial microbiome tests have no proven clinical value and that clinicians often lack guidance for interpreting them. That skepticism is reasonable.</p></div><div><span class="case-label">OUR RESPONSE</span><h3>Show the benchmark—and its limits.</h3><p>GutMap 24 replaces a one-size-fits-all population comparison with a healthy reference conditional on age, sex, and BMI. It shows species-level differences and uncertainty from study-grouped validation. This is designed to support more transparent interpretation, not to claim that the test is clinically reliable already.</p></div></div><div class="proof-grid"><div><strong>7,160</strong><span>healthy adult samples used for reference fitting</span></div><div><strong>45</strong><span>studies represented in the training cohort</span></div><div><strong>175</strong><span>species in the fixed model panel</span></div></div><p class="proof-note">The current model is a reproducible research pipeline based on cMD3 profiles. It does not fix sample collection or sequencing quality, and external validation on fully unseen studies and prospective testing are still needed before clinical claims. These figures describe the research dataset, not customer traction or clinical outcomes.</p></section>
+    <!-- SECTION 03: SEE IT WORK / PROTOTYPE -->
+    <section class="prototype" id="prototype">
+      <div class="prototype-inner wrap">
+        <div>
+          <div class="section-index">03 / SEE IT WORK</div>
+          <h2 data-lang-key="proto-title">From a sample file to a clearer comparison.</h2>
+          <p data-lang-key="proto-lead">Open the interactive research prototype, load the included cMD3 example, and see how an observed profile is compared with its personalized reference. No sample file needed to explore the demo.</p>
+          <a href="#" class="button button-light" data-lang-key="proto-btn">Open the prototype ↗</a>
+        </div>
+        <div class="demo-card">
+          <div class="demo-bar">
+            <span data-lang-key="demo-bar-title">RESEARCH PROTOTYPE</span>
+            <div class="demo-dot"></div>
+            <span>ONLINE</span>
+          </div>
+          <div class="demo-flow">
+            <div><b>01</b> <span data-lang-key="demo-step1">Load cMD3 example</span></div>
+            <div><b>02</b> <span data-lang-key="demo-step2">Set age, sex & BMI</span></div>
+            <div><b>03</b> <span data-lang-key="demo-step3">Compare with reference</span></div>
+          </div>
+          <p data-lang-key="demo-foot">Explore the model with a de-identified example profile.</p>
+        </div>
+      </div>
+    </section>
 
-    <section class="closing wrap" aria-labelledby="closing-title"><div class="closing-left"><p class="section-index">05 / TAKE THE NEXT STEP</p><h2 id="closing-title">See what a personal reference can reveal.</h2><p>Explore the example profile and the comparison it produces.</p><a class="button button-primary" href="https://gut-daily-app.biologyinernational2.chatgpt.site/analysis" target="_blank" rel="noopener noreferrer">Try the research prototype <span aria-hidden="true">↗</span></a></div><div class="trial-card"><p class="trial-kicker">FREE TRIAL</p><h3>Interested in trying GutMap 24?</h3><p>Leave your email and any question or comment. This is a preview of the request form; messages are not sent yet.</p><form aria-label="Free trial request form preview" onsubmit="return false"><label for="trial-email">Email</label><input id="trial-email" name="email" type="email" autocomplete="email" placeholder="you@example.com"><label for="trial-comment">Question or comment</label><textarea id="trial-comment" name="comment" rows="4" placeholder="What would you like to know?"></textarea><button class="button button-primary" type="submit" disabled>Request free trial</button><small>Form preview — sending is not enabled.</small></form></div></section>
+    <!-- SECTION 04: WHY BELIEVE IT -->
+    <section class="proof wrap">
+      <div class="section-heading">
+        <div class="section-index">04 / WHY BELIEVE IT</div>
+        <h2 data-lang-key="proof-title">Built for the questions clinicians actually ask.</h2>
+      </div>
+      
+      <div class="clinician-case">
+        <div>
+          <div class="case-label" data-lang-key="case1-label">THE CLINICAL TRUST GAP</div>
+          <h3 data-lang-key="case1-title">“What is this result being compared with?”</h3>
+          <p data-lang-key="case1-text">A 2025 international consensus statement in The Lancet Gastroenterology & Hepatology cautioned that many commercial microbiome tests have no proven clinical value and that clinicians often lack guidance for interpreting them. That skepticism is reasonable.</p>
+        </div>
+        <div>
+          <div class="case-label" data-lang-key="case2-label">OUR RESPONSE</div>
+          <h3 data-lang-key="case2-title">Show the benchmark—and its limits.</h3>
+          <p data-lang-key="case2-text">GutMap 24 replaces a one-size-fits-all population comparison with a healthy reference conditional on age, sex, and BMI. It shows species-level differences and uncertainty from study-grouped validation. This is designed to support more transparent interpretation, not to claim that the test is clinically reliable already.</p>
+        </div>
+      </div>
+
+      <div class="proof-grid">
+        <div>
+          <strong id="stat-samples">7,160</strong>
+          <span data-lang-key="stat1-text">healthy adult samples used for reference fitting</span>
+        </div>
+        <div>
+          <strong id="stat-studies">45</strong>
+          <span data-lang-key="stat2-text">studies represented in the training cohort</span>
+        </div>
+        <div>
+          <strong id="stat-species">175</strong>
+          <span data-lang-key="stat3-text">species in the fixed model panel</span>
+        </div>
+      </div>
+      <p class="proof-note" data-lang-key="proof-foot">The current model is a reproducible research pipeline based on cMD3 profiles. It does not fix sample collection or sequencing quality, and external validation on fully unseen studies and prospective testing are still needed before clinical claims. These figures describe the research dataset, not customer traction or clinical outcomes.</p>
+    </section>
+
+    <section class="closing">
+      <div class="wrap">
+        <div class="section-index">05 / TAKE THE NEXT STEP</div>
+        <h2 data-lang-key="close-title">See what a personal reference can reveal.</h2>
+        <p data-lang-key="close-lead">Explore the example profile and the comparison it produces.</p>
+        <a href="#prototype" class="button button-primary" data-lang-key="close-btn">Try the research prototype ↗</a>
+        
+        <div class="trial-card" style="margin-top:50px; text-align:left;">
+          <div class="trial-kicker" data-lang-key="form-kick">FREE TRIAL</div>
+          <h3 data-lang-key="form-title">Interested in trying GutMap 24?</h3>
+          <p data-lang-key="form-lead">Leave your email and any question or comment. This is a preview of the request form; messages are not sent yet.</p>
+          <form onsubmit="return false;">
+            <label data-lang-key="form-lbl-email">Email</label>
+            <label data-lang-key="form-lbl-msg">Question or comment</label>
+            <textarea rows="3" disabled></textarea>
+            <button class="button button-primary" disabled data-lang-key="form-btn">Request free trial</button>
+          </form>
+          <small style="display:block; margin-top:10px;" data-lang-key="form-foot">Form preview — sending is not enabled.</small>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="site-footer wrap"><div><span>GutMap 24 · Team 24</span><p>Research prototype. Not for diagnosis or treatment decisions.</p></div><div class="team-list"><span>OUR TEAM</span><a href="https://lms.skoltech.ru/groups/1652/users/15778" target="_blank" rel="noopener noreferrer">Artur Akhmadishin</a><a href="https://lms.skoltech.ru/groups/1652/users/16051" target="_blank" rel="noopener noreferrer">Jacinta Kazenzi</a><a href="https://lms.skoltech.ru/groups/1652/users/16034" target="_blank" rel="noopener noreferrer">Denis Kolesnikov</a><a href="https://lms.skoltech.ru/groups/1652/users/14714" target="_blank" rel="noopener noreferrer">Valeriia Koss</a><a href="https://lms.skoltech.ru/groups/1652/users/15802" target="_blank" rel="noopener noreferrer">Dmitry Kukarkin</a></div></footer>
+
+  <footer class="site-footer wrap">
+    <div>
+      <p>GutMap 24 · Team 24</p>
+      <p data-lang-key="foot-note">Research prototype. Not for diagnosis or treatment decisions.</p>
+    </div>
+    <div class="team-list">
+      <span data-lang-key="foot-team">OUR TEAM</span>
+      <a href="#">Artur Akhmadishin</a>
+      <a href="#">Jacinta Kazenzi</a>
+      <a href="#">Denis Kolesnikov</a>
+      <a href="#">Valeriia Koss</a>
+      <a href="#">Dmitry Kukarkin</a>
+    </div>
+  </footer>
+
+  <script>
+  const translations = {
+      en: {
+          "nav-science": "The science",
+          "nav-works": "How it works",
+          "nav-prototype": "Explore prototype ↗",
+          "hero-eyebrow": "TEAM 24 · PERSONALIZED MICROBIOME REFERENCE",
+          "hero-title": "A better recommendation for <em>every gut.</em>",
+          "hero-lead": "Microbiome reports often compare everyone with the same average. GutMap 24 makes the comparison more relevant: a healthy reference adjusted for age, sex, and BMI, with uncertainty shown alongside each result.",
+          "btn-try": "Try the research prototype ↗",
+          "btn-see": "See the approach ↓",
+          "hero-note": "Research prototype · Not a clinical diagnostic tool",
+          "vis-title": "PERSONALIZED REFERENCE EXAMPLE VIEW",
+          "vis-person-title": "One person. A more relevant comparison.",
+          "vis-person-meta": "Age 37 · Male · BMI 31",
+          "vis-label-below": "BELOW REFERENCE",
+          "vis-label-expected": "EXPECTED",
+          "vis-label-above": "ABOVE REFERENCE",
+          "vis-status-below": "Below",
+          "vis-status-within": "Within",
+          "vis-status-above": "Above",
+          "vis-leg-ref": "Healthy reference interval",
+          "vis-leg-obs": "Observed profile",
+          "vis-caveat": "Illustrative layout; not a patient result.",
+          "promise-title": "Make microbiome data <em>personally meaningful.</em>",
+          "promise-lead": "We turn a long list of microbial abundances into a clear, person-specific comparison. For doctors, gastroenterologists, and nutritionists, a visible reference and uncertainty estimate can make a report easier to scrutinize instead of asking them to trust an unexplained “normal” range.",
+          "sauce-title": "A reference built around the person, not the population average.",
+          "sauce-lead": "Our model learns from healthy adult stool samples and estimates the expected microbiome composition for someone with the same age, sex, and BMI. It then compares an individual profile with that conditional reference, species by species.",
+          "fig-placeholder": "[ Illustration contrasting one general microbiome average with a personalized reference that includes an uncertainty band ]",
+          "fig-cap-left": "One average for everyone",
+          "fig-cap-right": "A reference tailored to the person",
+          "step1-title": "Start with a profile",
+          "step1-text": "Upload relative-abundance data from a microbiome sample, along with basic demographic inputs.",
+          "step2-title": "Build a personal baseline",
+          "step2-text": "Estimate a healthy reference adjusted for age, sex, and BMI—not a single fixed range for everyone.",
+          "step3-title": "See the displacement",
+          "step3-text": "Highlight species above or below their reference and show uncertainty from out-of-study validation.",
+          "proto-title": "From a sample file to a clearer comparison.",
+          "proto-lead": "Open the interactive research prototype, load the included cMD3 example, and see how an observed profile is compared with its personalized reference. No sample file needed to explore the demo.",
+          "proto-btn": "Open the prototype ↗",
+          "demo-bar-title": "RESEARCH PROTOTYPE",
+          "demo-step1": "Load cMD3 example",
+          "demo-step2": "Set age, sex & BMI",
+          "demo-step3": "Compare with reference",
+          "demo-foot": "Explore the model with a de-identified example profile.",
+          "proof-title": "Built for the questions clinicians actually ask.",
+          "case1-label": "THE CLINICAL TRUST GAP",
+          "case1-title": "“What is this result being compared with?”",
+          "case1-text": "A 2025 international consensus statement in The Lancet Gastroenterology & Hepatology cautioned that many commercial microbiome tests have no proven clinical value and that clinicians often lack guidance for interpreting them. That skepticism is reasonable.",
+          "case2-label": "OUR RESPONSE",
+          "case2-title": "Show the benchmark—and its limits.",
+          "case2-text": "GutMap 24 replaces a one-size-fits-all population comparison with a healthy reference conditional on age, sex, and BMI. It shows species-level differences and uncertainty from study-grouped validation. This is designed to support more transparent interpretation, not to claim that the test is clinically reliable already.",
+          "stat1-text": "healthy adult samples used for reference fitting",
+          "stat2-text": "studies represented in the training cohort",
+          "stat3-text": "species in the fixed model panel",
+          "proof-foot": "The current model is a reproducible research pipeline based on cMD3 profiles. It does not fix sample collection or sequencing quality, and external validation on fully unseen studies and prospective testing are still needed before clinical claims. These figures describe the research dataset, not customer traction or clinical outcomes.",
+          "close-title": "See what a personal reference can reveal.",
+          "close-lead": "Explore the example profile and the comparison it produces.",
+          "close-btn": "Try the research prototype ↗",
+          "form-kick": "FREE TRIAL",
+          "form-title": "Interested in trying GutMap 24?",
+          "form-lead": "Leave your email and any question or comment. This is a preview of the request form; messages are not sent yet.",
+          "form-lbl-email": "Email",
+          "form-lbl-msg": "Question or comment",
+          "form-btn": "Request free trial",
+          "form-foot": "Form preview — sending is not enabled.",
+          "foot-note": "Research prototype. Not for diagnosis or treatment decisions.",
+          "foot-team": "OUR TEAM"
+      },
+      ru: {
+          "nav-science": "Научная база",
+          "nav-works": "Как это работает",
+          "nav-prototype": "Демо-прототип ↗",
+          "hero-eyebrow": "КОМАНДА 24 · ПЕРСОНАЛИЗИРОВАННЫЙ РЕФЕРЕНС МИКРОБИОМА",
+          "hero-title": "Более точные рекомендации для <em>каждого кишечника.</em>",
+          "hero-lead": "Отчёты микробиома часто сравнивают всех со средним значением по популяции. GutMap 24 делает сравнение релевантным: здоровая референсная база адаптируется под возраст, пол и ИМТ, отображая погрешность рядом с каждым результатом.",
+          "btn-try": "Открыть прототип исследования ↗",
+          "btn-see": "Узнать о подходе ↓",
+          "hero-note": "Исследовательский прототип · Не является инструментом клинической диагностики",
+          "vis-title": "ПРИМЕР ИНДИВИДУАЛЬНОГО ИНТЕРФЕЙСА РЕФЕРЕНСА",
+          "vis-person-title": "Один человек. Более точное сравнение.",
+          "vis-person-meta": "Возраст 37 · Мужчина · ИМТ 31",
+          "vis-label-below": "НИЖЕ РЕФЕРЕНСА",
+          "vis-label-expected": "В ПРЕДЕЛАХ НОРМЫ",
+          "vis-label-above": "ВЫШЕ РЕФЕРЕНСА",
+          "vis-status-below": "Ниже",
+          "vis-status-within": "В норме",
+          "vis-status-above": "Выше",
+          "vis-leg-ref": "Интервал здорового референса",
+          "vis-leg-obs": "Наблюдаемый профиль",
+          "vis-caveat": "Иллюстративный макет; не является результатом реального пациента.",
+          "promise-title": "Сделайте данные микробиома <em>по-настоящему значимыми.</em>",
+          "promise-lead": "Мы превращаем длинный список микробного обилия в понятное, персонализированное сравнение. Для врачей, гастроэнтерологов и нутрициологов наглядный референс и оценка погрешности упрощают анализ отчета, избавляя от необходимости слепо верить необъяснимому «нормальному» диапазону.",
+          "sauce-title": "Референс, построенный вокруг человека, а не среднего по популяции.",
+          "sauce-lead": "Наша модель обучается на образцах стула здоровых взрослых людей и прогнозирует ожидаемый состав микробиома для человека того же возраста, пола и ИМТ. Затем она сравнивает индивидуальный профиль с этим условным референсом, вид за видом.",
+          "fig-placeholder": "[ Иллюстрация, сравнивающая одно общее среднее значение микробиома с персонализированным референсом, включающим полосу неопределенности ]",
+          "fig-cap-left": "Одно среднее для всех",
+          "fig-cap-right": "Референс, адаптированный под человека",
+          "step1-title": "Загрузка профиля",
+          "step1-text": "Загрузите данные относительного обилия из образца микробиома вместе с базовыми демографическими показателями.",
+          "step2-title": "Создание базовой линии",
+          "step2-text": "Оцените здоровый референс с поправкой на возраст, пол и ИМТ — вместо единого фиксированного диапазона для всех.",
+          "step3-title": "Анализ смещения",
+          "step3-text": "Выделите виды бактерий выше или ниже их референсных значений и посмотрите погрешность внешней валидации.",
+          "proto-title": "От файла образца к наглядному сравнению.",
+          "proto-lead": "Откройте интерактивный исследовательский прототип, загрузите встроенный пример cMD3 и посмотрите, как наблюдаемый профиль сравнивается со своим персональным референсом. Для изучения демо-версии файл не требуется.",
+          "proto-btn": "Открыть прототип ↗",
+          "demo-bar-title": "ИССЛЕДОВАТЕЛЬСКИЙ ПРОТОТИП",
+          "demo-step1": "Загрузить пример cMD3",
+          "demo-step2": "Указать возраст, пол и ИМТ",
+          "demo-step3": "Сравнить с референсом",
+          "demo-foot": "Изучите модель на примере деидентифицированного профиля.",
+          "proof-title": "Создано для ответов на реальные вопросы клиницистов.",
+          "case1-label": "КРИЗИС ДОВЕРИЯ В КЛИНИКАХ",
+          "case1-title": "«С чем именно сравнивается этот результат?»",
+          "case1-text": "В международном консенсусном заявлении 2025 года в журнале The Lancet Gastroenterology & Hepatology подчеркивалось, что многие коммерческие тесты микробиома не имеют доказанной клинической ценности, а врачам не хватает руководств по их интерпретации. И этот скептицизм полностью обоснован.",
+          "case2-label": "НАШ ОТВЕТ",
+          "case2-title": "Показать эталон и его границы.",
+          "case2-text": "GutMap 24 заменяет универсальное популяционное сравнение здоровым референсом, зависящим от возраста, пола и ИМТ. Модель наглядно показывает различия на уровне видов бактерий и неопределенность валидации по группам исследований. Это разработано для прозрачной интерпретации, а не для утверждения абсолютной клинической надежности.",
+          "stat1-text": "образцов здоровых взрослых использовано для настройки референса",
+          "stat2-text": "исследований представлено в учебной когорте",
+          "stat3-text": "видов бактерий в фиксированной панели модели",
+          "proof-foot": "Текущая модель представляет собой воспроизводимый исследовательский конвейер на основе профилей cMD3. Она не исправляет качество сбора образцов или секвенирования. Прежде чем выдвигать клинические заявления, всё ещё требуются внешняя валидация на полностью независимых когортах и проспективное тестирование. Эти цифры описывают исследовательский датасет, а не удержание клиентов или клинические исходы.",
+          "close-title": "Посмотрите, что может открыть персональный референс.",
+          "close-lead": "Изучите пример профиля и полученное в результате сравнение.",
+          "close-btn": "Открыть прототип исследования ↗",
+          "form-kick": "БЕСПЛАТНЫЙ ТЕСТ",
+          "form-title": "Хотите протестировать GutMap 24?",
+          "form-lead": "Оставьте свой email, вопрос или комментарий. Это предварительный просмотр формы запроса; сообщения пока не отправляются.",
+          "form-lbl-email": "Электронная почта",
+          "form-lbl-msg": "Вопрос или комментарий",
+          "form-btn": "Запросить бесплатный доступ",
+          "form-foot": "Предпросмотр формы — отправка данных отключена.",
+          "foot-note": "Исследовательский прототип. Не предназначен для постановки диагнозов или принятия решений о лечении.",
+          "foot-team": "НАША КОМАНДА"
+      }
+  };
+
+  let currentLang = 'en';
+  const langToggleBtn = document.getElementById('lang-toggle');
+
+  langToggleBtn.addEventListener('click', () => {
+      currentLang = currentLang === 'en' ? 'ru' : 'en';
+      langToggleBtn.textContent = currentLang === 'en' ? 'RU' : 'EN';
+      
+      document.querySelectorAll('[data-lang-key]').forEach(element => {
+          const key = element.getAttribute('data-lang-key');
+          if (translations[currentLang][key]) {
+              if (key === 'hero-title') {
+                  element.innerHTML = currentLang === 'en' 
+                      ? 'A better recommendation for <em>every gut.</em>' 
+                      : 'Более точные рекомендации для <em>каждого кишечника.</em>';
+              } else if (key === 'promise-title') {
+                  element.innerHTML = currentLang === 'en'
+                      ? 'Make microbiome data <em>personally meaningful.</em>'
+                      : 'Сделайте данные микробиома <em>по-настоящему значимыми.</em>';
+              } else {
+                  element.textContent = translations[currentLang][key];
+              }
+          }
+      });
+  });
+  </script>
 </body>
 </html>
