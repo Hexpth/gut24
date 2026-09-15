@@ -1,0 +1,2655 @@
+{
+  "schema_version": 2,
+  "trained_at": "2026-09-11 12:13:07 UTC",
+  "source": "curatedMetagenomicData / ExperimentHub; cMD3 curation v3.0 metadata",
+  "reference_population": "healthy adults only",
+  "samples": 7160,
+  "studies": 45,
+  "taxa": 175,
+  "preprocessing": {
+    "input_unit": "relative abundance percent",
+    "pseudocount": 1e-05,
+    "transform": "closure_then_CLR",
+    "fixed_panel": true
+  },
+  "covariates": {
+    "age_mean": 45.34064246,
+    "age_sd": 15.10237992,
+    "bmi_mean": 25.73312405,
+    "bmi_sd": 5.87068633,
+    "diagnoses": [],
+    "design_columns": ["(Intercept)", "age_z", "I(age_z^2)", "sex_male", "bmi_z", "I(bmi_z^2)"]
+  },
+  "validation": {
+    "strategy": "5-fold grouped by study",
+    "median_empirical_coverage_95": 0.95,
+    "mean_empirical_coverage_95": 0.95
+  },
+  "taxa_models": [
+    {
+      "id": "s__Faecalibacterium_prausnitzii",
+      "prevalence": 0.98798883,
+      "mean_abundance": 6.17939968,
+      "residual_sd": 1.34995567,
+      "conformal_abs_residual_95": 2.23420985,
+      "coefficients": {
+        "(Intercept)": 6.06246597,
+        "age_z": -0.11712484,
+        "I(age_z^2)": -0.03788359,
+        "sex_male": 0.13349497,
+        "bmi_z": 0.05631719,
+        "I(bmi_z^2)": -0.03128424
+      }
+    },
+    {
+      "id": "s__Fusicatenibacter_saccharivorans",
+      "prevalence": 0.93519553,
+      "mean_abundance": 2.1968571,
+      "residual_sd": 2.18071814,
+      "conformal_abs_residual_95": 5.34895254,
+      "coefficients": {
+        "(Intercept)": 4.53780967,
+        "age_z": -0.10727551,
+        "I(age_z^2)": -0.10733539,
+        "sex_male": -0.24739057,
+        "bmi_z": 0.24628465,
+        "I(bmi_z^2)": -0.10967129
+      }
+    },
+    {
+      "id": "s__Anaerostipes_hadrus",
+      "prevalence": 0.93128492,
+      "mean_abundance": 1.64861279,
+      "residual_sd": 2.24566199,
+      "conformal_abs_residual_95": 5.10442569,
+      "coefficients": {
+        "(Intercept)": 4.07828314,
+        "age_z": -0.02439008,
+        "I(age_z^2)": -0.05793093,
+        "sex_male": -0.32163538,
+        "bmi_z": 0.16924942,
+        "I(bmi_z^2)": -0.11137723
+      }
+    },
+    {
+      "id": "s__Blautia_wexlerae",
+      "prevalence": 0.93114525,
+      "mean_abundance": 0.62837198,
+      "residual_sd": 2.14220808,
+      "conformal_abs_residual_95": 4.40103156,
+      "coefficients": {
+        "(Intercept)": 2.55029953,
+        "age_z": -0.15879399,
+        "I(age_z^2)": 0.00109704,
+        "sex_male": 0.00301007,
+        "bmi_z": 0.13853623,
+        "I(bmi_z^2)": -0.0694192
+      }
+    },
+    {
+      "id": "s__Bacteroides_uniformis",
+      "prevalence": 0.93100559,
+      "mean_abundance": 4.86188877,
+      "residual_sd": 2.44974455,
+      "conformal_abs_residual_95": 6.16514919,
+      "coefficients": {
+        "(Intercept)": 4.95800519,
+        "age_z": 0.03319106,
+        "I(age_z^2)": 0.01068287,
+        "sex_male": -0.32876374,
+        "bmi_z": -0.04927696,
+        "I(bmi_z^2)": 0.04767331
+      }
+    },
+    {
+      "id": "s__Agathobaculum_butyriciproducens",
+      "prevalence": 0.92164804,
+      "mean_abundance": 0.38211628,
+      "residual_sd": 1.86727842,
+      "conformal_abs_residual_95": 4.15435218,
+      "coefficients": {
+        "(Intercept)": 2.76999347,
+        "age_z": 0.10110075,
+        "I(age_z^2)": -0.11120564,
+        "sex_male": 0.13365853,
+        "bmi_z": 0.0852325,
+        "I(bmi_z^2)": -0.02577907
+      }
+    },
+    {
+      "id": "s__Eubacterium_hallii",
+      "prevalence": 0.92039106,
+      "mean_abundance": 1.10580195,
+      "residual_sd": 2.25427484,
+      "conformal_abs_residual_95": 4.8987193,
+      "coefficients": {
+        "(Intercept)": 3.73827585,
+        "age_z": -0.16319791,
+        "I(age_z^2)": -0.06174164,
+        "sex_male": -0.25663977,
+        "bmi_z": 0.3016587,
+        "I(bmi_z^2)": -0.15063243
+      }
+    },
+    {
+      "id": "s__Dorea_longicatena",
+      "prevalence": 0.91606145,
+      "mean_abundance": 1.39012601,
+      "residual_sd": 2.20384556,
+      "conformal_abs_residual_95": 5.36832743,
+      "coefficients": {
+        "(Intercept)": 3.95576057,
+        "age_z": -0.19285406,
+        "I(age_z^2)": -0.05454254,
+        "sex_male": 0.03182648,
+        "bmi_z": 0.25014912,
+        "I(bmi_z^2)": -0.10984935
+      }
+    },
+    {
+      "id": "s__Eubacterium_rectale",
+      "prevalence": 0.91075419,
+      "mean_abundance": 3.235557,
+      "residual_sd": 2.8151773,
+      "conformal_abs_residual_95": 5.92521601,
+      "coefficients": {
+        "(Intercept)": 3.97799784,
+        "age_z": -0.32085583,
+        "I(age_z^2)": 0.08392022,
+        "sex_male": 0.17737174,
+        "bmi_z": 0.3545361,
+        "I(bmi_z^2)": -0.10628389
+      }
+    },
+    {
+      "id": "s__Dorea_formicigenerans",
+      "prevalence": 0.90502793,
+      "mean_abundance": 0.44632121,
+      "residual_sd": 1.94165856,
+      "conformal_abs_residual_95": 4.43610938,
+      "coefficients": {
+        "(Intercept)": 2.93875839,
+        "age_z": -0.11473487,
+        "I(age_z^2)": -0.02405252,
+        "sex_male": 0.03714532,
+        "bmi_z": 0.18704879,
+        "I(bmi_z^2)": -0.09694103
+      }
+    },
+    {
+      "id": "s__Roseburia_inulinivorans",
+      "prevalence": 0.90488827,
+      "mean_abundance": 0.87619248,
+      "residual_sd": 2.29368884,
+      "conformal_abs_residual_95": 4.99667958,
+      "coefficients": {
+        "(Intercept)": 2.86699873,
+        "age_z": -0.01728965,
+        "I(age_z^2)": -0.01329524,
+        "sex_male": 0.49784595,
+        "bmi_z": 0.11435552,
+        "I(bmi_z^2)": 0.01295562
+      }
+    },
+    {
+      "id": "s__Collinsella_aerofaciens",
+      "prevalence": 0.89902235,
+      "mean_abundance": 2.43929389,
+      "residual_sd": 2.71990238,
+      "conformal_abs_residual_95": 5.85535154,
+      "coefficients": {
+        "(Intercept)": 3.87230517,
+        "age_z": -0.19807796,
+        "I(age_z^2)": 0.03355861,
+        "sex_male": 0.11431782,
+        "bmi_z": 0.19960653,
+        "I(bmi_z^2)": -0.08082681
+      }
+    },
+    {
+      "id": "s__Blautia_obeum",
+      "prevalence": 0.89818436,
+      "mean_abundance": 0.71250094,
+      "residual_sd": 2.20451676,
+      "conformal_abs_residual_95": 4.44250379,
+      "coefficients": {
+        "(Intercept)": 3.0574602,
+        "age_z": -0.1221873,
+        "I(age_z^2)": 0.01877971,
+        "sex_male": -0.364499,
+        "bmi_z": 0.12372281,
+        "I(bmi_z^2)": -0.10750216
+      }
+    },
+    {
+      "id": "s__Bacteroides_vulgatus",
+      "prevalence": 0.88421788,
+      "mean_abundance": 5.59590868,
+      "residual_sd": 3.06940615,
+      "conformal_abs_residual_95": 6.56053272,
+      "coefficients": {
+        "(Intercept)": 4.31831605,
+        "age_z": -0.1747062,
+        "I(age_z^2)": 0.05115794,
+        "sex_male": 0.06382834,
+        "bmi_z": 0.10130213,
+        "I(bmi_z^2)": 0.05552891
+      }
+    },
+    {
+      "id": "s__Parabacteroides_distasonis",
+      "prevalence": 0.88337989,
+      "mean_abundance": 1.15091812,
+      "residual_sd": 2.42737319,
+      "conformal_abs_residual_95": 5.3074811,
+      "coefficients": {
+        "(Intercept)": 3.37585846,
+        "age_z": -0.00043867,
+        "I(age_z^2)": -0.03985377,
+        "sex_male": -0.10945125,
+        "bmi_z": -0.13751932,
+        "I(bmi_z^2)": 0.06496793
+      }
+    },
+    {
+      "id": "s__Gemmiger_formicilis",
+      "prevalence": 0.87122905,
+      "mean_abundance": 0.23212846,
+      "residual_sd": 1.96059267,
+      "conformal_abs_residual_95": 3.99796877,
+      "coefficients": {
+        "(Intercept)": 2.17528534,
+        "age_z": -0.12843416,
+        "I(age_z^2)": -0.05771069,
+        "sex_male": -0.0556143,
+        "bmi_z": 0.19735072,
+        "I(bmi_z^2)": -0.06070932
+      }
+    },
+    {
+      "id": "s__Coprococcus_comes",
+      "prevalence": 0.86382682,
+      "mean_abundance": 0.91684567,
+      "residual_sd": 2.39866806,
+      "conformal_abs_residual_95": 5.11356117,
+      "coefficients": {
+        "(Intercept)": 3.32956041,
+        "age_z": -0.11665076,
+        "I(age_z^2)": -0.07011109,
+        "sex_male": 0.12203222,
+        "bmi_z": 0.36175568,
+        "I(bmi_z^2)": -0.1335193
+      }
+    },
+    {
+      "id": "s__Ruthenibacterium_lactatiformans",
+      "prevalence": 0.85740223,
+      "mean_abundance": 0.20165084,
+      "residual_sd": 2.0043221,
+      "conformal_abs_residual_95": 3.78852992,
+      "coefficients": {
+        "(Intercept)": 1.53164065,
+        "age_z": 0.27648557,
+        "I(age_z^2)": 0.01848555,
+        "sex_male": -0.45898055,
+        "bmi_z": 0.01532025,
+        "I(bmi_z^2)": 0.0011313
+      }
+    },
+    {
+      "id": "s__Roseburia_hominis",
+      "prevalence": 0.84622905,
+      "mean_abundance": 0.36965865,
+      "residual_sd": 2.22886966,
+      "conformal_abs_residual_95": 4.23083274,
+      "coefficients": {
+        "(Intercept)": 2.18960299,
+        "age_z": 0.1117738,
+        "I(age_z^2)": -0.06723305,
+        "sex_male": -0.30211043,
+        "bmi_z": -0.01765413,
+        "I(bmi_z^2)": -0.02854833
+      }
+    },
+    {
+      "id": "s__Ruminococcus_torques",
+      "prevalence": 0.84371508,
+      "mean_abundance": 1.09080065,
+      "residual_sd": 2.62250958,
+      "conformal_abs_residual_95": 5.21226747,
+      "coefficients": {
+        "(Intercept)": 3.16707395,
+        "age_z": -0.29368349,
+        "I(age_z^2)": -0.06860378,
+        "sex_male": 0.23474463,
+        "bmi_z": 0.24872919,
+        "I(bmi_z^2)": -0.12147638
+      }
+    },
+    {
+      "id": "s__Roseburia_faecis",
+      "prevalence": 0.83631285,
+      "mean_abundance": 2.34242462,
+      "residual_sd": 3.06116215,
+      "conformal_abs_residual_95": 5.90670188,
+      "coefficients": {
+        "(Intercept)": 3.48588575,
+        "age_z": -0.01124672,
+        "I(age_z^2)": -0.04167019,
+        "sex_male": 0.16953136,
+        "bmi_z": 0.23622592,
+        "I(bmi_z^2)": -0.04417246
+      }
+    },
+    {
+      "id": "s__Eubacterium_eligens",
+      "prevalence": 0.83351955,
+      "mean_abundance": 1.28507485,
+      "residual_sd": 2.72116237,
+      "conformal_abs_residual_95": 5.24506836,
+      "coefficients": {
+        "(Intercept)": 3.12458988,
+        "age_z": 0.18400433,
+        "I(age_z^2)": -0.05527965,
+        "sex_male": -0.23365427,
+        "bmi_z": -0.27063775,
+        "I(bmi_z^2)": 0.0307089
+      }
+    },
+    {
+      "id": "s__Odoribacter_splanchnicus",
+      "prevalence": 0.81787709,
+      "mean_abundance": 0.43563875,
+      "residual_sd": 2.43980182,
+      "conformal_abs_residual_95": 4.59193671,
+      "coefficients": {
+        "(Intercept)": 2.51622179,
+        "age_z": -0.07887346,
+        "I(age_z^2)": -0.04304996,
+        "sex_male": -0.43444203,
+        "bmi_z": -0.05511489,
+        "I(bmi_z^2)": 0.06045923
+      }
+    },
+    {
+      "id": "s__Bacteroides_ovatus",
+      "prevalence": 0.81703911,
+      "mean_abundance": 0.84877128,
+      "residual_sd": 2.7611385,
+      "conformal_abs_residual_95": 4.94776553,
+      "coefficients": {
+        "(Intercept)": 2.19558942,
+        "age_z": -0.20781544,
+        "I(age_z^2)": 0.01849313,
+        "sex_male": -0.02256703,
+        "bmi_z": -0.08475815,
+        "I(bmi_z^2)": 0.05914552
+      }
+    },
+    {
+      "id": "s__Streptococcus_salivarius",
+      "prevalence": 0.81396648,
+      "mean_abundance": 0.30775315,
+      "residual_sd": 2.38050363,
+      "conformal_abs_residual_95": 4.19084319,
+      "coefficients": {
+        "(Intercept)": 1.09551689,
+        "age_z": 0.09916102,
+        "I(age_z^2)": 0.25218723,
+        "sex_male": -0.11610331,
+        "bmi_z": -0.06262475,
+        "I(bmi_z^2)": -0.03112313
+      }
+    },
+    {
+      "id": "s__Coprococcus_catus",
+      "prevalence": 0.8099162,
+      "mean_abundance": 0.31365058,
+      "residual_sd": 2.29845079,
+      "conformal_abs_residual_95": 4.16026166,
+      "coefficients": {
+        "(Intercept)": 2.25900259,
+        "age_z": -0.06446722,
+        "I(age_z^2)": -0.07396886,
+        "sex_male": -0.16905346,
+        "bmi_z": 0.13833155,
+        "I(bmi_z^2)": -0.12096276
+      }
+    },
+    {
+      "id": "s__Alistipes_putredinis",
+      "prevalence": 0.80586592,
+      "mean_abundance": 2.93899276,
+      "residual_sd": 3.21250069,
+      "conformal_abs_residual_95": 5.77567673,
+      "coefficients": {
+        "(Intercept)": 3.79562452,
+        "age_z": -0.17427773,
+        "I(age_z^2)": -0.02100696,
+        "sex_male": -0.51245806,
+        "bmi_z": 0.05453841,
+        "I(bmi_z^2)": -0.06602194
+      }
+    },
+    {
+      "id": "s__Bifidobacterium_longum",
+      "prevalence": 0.80055866,
+      "mean_abundance": 1.64497093,
+      "residual_sd": 3.0760876,
+      "conformal_abs_residual_95": 5.3386295,
+      "coefficients": {
+        "(Intercept)": 2.85242879,
+        "age_z": -0.23014297,
+        "I(age_z^2)": 0.1635312,
+        "sex_male": -0.23814617,
+        "bmi_z": 0.05577148,
+        "I(bmi_z^2)": -0.10727558
+      }
+    },
+    {
+      "id": "s__Firmicutes_bacterium_CAG_83",
+      "prevalence": 0.78798883,
+      "mean_abundance": 0.25477957,
+      "residual_sd": 2.26344114,
+      "conformal_abs_residual_95": 3.96505119,
+      "coefficients": {
+        "(Intercept)": 1.43049822,
+        "age_z": 0.05274403,
+        "I(age_z^2)": 0.05846542,
+        "sex_male": -0.19268092,
+        "bmi_z": 0.07441738,
+        "I(bmi_z^2)": -0.00172177
+      }
+    },
+    {
+      "id": "s__Bacteroides_thetaiotaomicron",
+      "prevalence": 0.78756983,
+      "mean_abundance": 0.73297071,
+      "residual_sd": 2.78201931,
+      "conformal_abs_residual_95": 4.76989281,
+      "coefficients": {
+        "(Intercept)": 2.01105574,
+        "age_z": 0.09340584,
+        "I(age_z^2)": 0.00605455,
+        "sex_male": -0.05677355,
+        "bmi_z": -0.24657257,
+        "I(bmi_z^2)": 0.13476341
+      }
+    },
+    {
+      "id": "s__Alistipes_finegoldii",
+      "prevalence": 0.77639665,
+      "mean_abundance": 0.61423707,
+      "residual_sd": 2.6078698,
+      "conformal_abs_residual_95": 4.46309738,
+      "coefficients": {
+        "(Intercept)": 1.98041118,
+        "age_z": -0.15068744,
+        "I(age_z^2)": -0.00918745,
+        "sex_male": -0.68606231,
+        "bmi_z": -0.05153605,
+        "I(bmi_z^2)": 0.00698682
+      }
+    },
+    {
+      "id": "s__Eubacterium_ramulus",
+      "prevalence": 0.77360335,
+      "mean_abundance": 0.14966328,
+      "residual_sd": 2.12626018,
+      "conformal_abs_residual_95": 3.68954612,
+      "coefficients": {
+        "(Intercept)": 1.36901307,
+        "age_z": 0.01319344,
+        "I(age_z^2)": -0.04645246,
+        "sex_male": 0.05523417,
+        "bmi_z": 0.19832406,
+        "I(bmi_z^2)": -0.08435481
+      }
+    },
+    {
+      "id": "s__Alistipes_shahii",
+      "prevalence": 0.75446927,
+      "mean_abundance": 0.21433581,
+      "residual_sd": 2.33409964,
+      "conformal_abs_residual_95": 3.88819409,
+      "coefficients": {
+        "(Intercept)": 1.3958206,
+        "age_z": -0.06393174,
+        "I(age_z^2)": -0.03307156,
+        "sex_male": -0.30023904,
+        "bmi_z": -0.10268451,
+        "I(bmi_z^2)": 0.01605474
+      }
+    },
+    {
+      "id": "s__Oscillibacter_sp_57_20",
+      "prevalence": 0.74986034,
+      "mean_abundance": 0.53777597,
+      "residual_sd": 2.71463454,
+      "conformal_abs_residual_95": 4.56975864,
+      "coefficients": {
+        "(Intercept)": 2.28894785,
+        "age_z": -0.05032175,
+        "I(age_z^2)": -0.16528358,
+        "sex_male": -0.13294242,
+        "bmi_z": -0.13719486,
+        "I(bmi_z^2)": -0.00875464
+      }
+    },
+    {
+      "id": "s__Collinsella_stercoris",
+      "prevalence": 0.74832402,
+      "mean_abundance": 0.0379829,
+      "residual_sd": 1.92438616,
+      "conformal_abs_residual_95": 3.48510999,
+      "coefficients": {
+        "(Intercept)": -0.18233371,
+        "age_z": -0.10747082,
+        "I(age_z^2)": 0.0898226,
+        "sex_male": 0.17811689,
+        "bmi_z": 0.16625455,
+        "I(bmi_z^2)": -0.09140885
+      }
+    },
+    {
+      "id": "s__Roseburia_intestinalis",
+      "prevalence": 0.74594972,
+      "mean_abundance": 0.7080094,
+      "residual_sd": 2.86985544,
+      "conformal_abs_residual_95": 4.67299753,
+      "coefficients": {
+        "(Intercept)": 1.76232254,
+        "age_z": 0.02107566,
+        "I(age_z^2)": -0.01889303,
+        "sex_male": 0.35277845,
+        "bmi_z": 0.40255835,
+        "I(bmi_z^2)": -0.02400364
+      }
+    },
+    {
+      "id": "s__Flavonifractor_plautii",
+      "prevalence": 0.73715084,
+      "mean_abundance": 0.18623681,
+      "residual_sd": 2.51642503,
+      "conformal_abs_residual_95": 4.17976756,
+      "coefficients": {
+        "(Intercept)": 0.77819773,
+        "age_z": 0.045167,
+        "I(age_z^2)": 0.02438317,
+        "sex_male": -0.06472802,
+        "bmi_z": 0.08077862,
+        "I(bmi_z^2)": 0.08715541
+      }
+    },
+    {
+      "id": "s__Ruminococcus_bromii",
+      "prevalence": 0.71955307,
+      "mean_abundance": 3.44136909,
+      "residual_sd": 3.71569837,
+      "conformal_abs_residual_95": 5.69125204,
+      "coefficients": {
+        "(Intercept)": 3.20216549,
+        "age_z": 0.05415042,
+        "I(age_z^2)": -0.00137057,
+        "sex_male": -0.45413872,
+        "bmi_z": 0.14092196,
+        "I(bmi_z^2)": -0.07455515
+      }
+    },
+    {
+      "id": "s__Barnesiella_intestinihominis",
+      "prevalence": 0.70949721,
+      "mean_abundance": 0.88885713,
+      "residual_sd": 3.00008108,
+      "conformal_abs_residual_95": 4.76376909,
+      "coefficients": {
+        "(Intercept)": 2.5270418,
+        "age_z": -0.12397648,
+        "I(age_z^2)": -0.08515644,
+        "sex_male": -0.64574212,
+        "bmi_z": 0.10355754,
+        "I(bmi_z^2)": -0.03641804
+      }
+    },
+    {
+      "id": "s__Parabacteroides_merdae",
+      "prevalence": 0.7075419,
+      "mean_abundance": 0.83652151,
+      "residual_sd": 3.06675843,
+      "conformal_abs_residual_95": 4.77039519,
+      "coefficients": {
+        "(Intercept)": 1.99440815,
+        "age_z": -0.17930464,
+        "I(age_z^2)": 0.10540755,
+        "sex_male": 0.0292734,
+        "bmi_z": 0.07777585,
+        "I(bmi_z^2)": 0.04206869
+      }
+    },
+    {
+      "id": "s__Bifidobacterium_adolescentis",
+      "prevalence": 0.70377095,
+      "mean_abundance": 3.03231266,
+      "residual_sd": 3.63341562,
+      "conformal_abs_residual_95": 5.61140151,
+      "coefficients": {
+        "(Intercept)": 2.64097357,
+        "age_z": -0.48750402,
+        "I(age_z^2)": 0.09063544,
+        "sex_male": 0.11423198,
+        "bmi_z": 0.41374787,
+        "I(bmi_z^2)": -0.18944746
+      }
+    },
+    {
+      "id": "s__Oscillibacter_sp_CAG_241",
+      "prevalence": 0.69413408,
+      "mean_abundance": 0.28993476,
+      "residual_sd": 2.52430784,
+      "conformal_abs_residual_95": 4.08821383,
+      "coefficients": {
+        "(Intercept)": 1.23246748,
+        "age_z": 0.11078323,
+        "I(age_z^2)": -0.06423455,
+        "sex_male": -0.50655761,
+        "bmi_z": 0.0800085,
+        "I(bmi_z^2)": -0.05459688
+      }
+    },
+    {
+      "id": "s__Bacteroides_caccae",
+      "prevalence": 0.69092179,
+      "mean_abundance": 0.90048981,
+      "residual_sd": 3.06757757,
+      "conformal_abs_residual_95": 4.74956219,
+      "coefficients": {
+        "(Intercept)": 2.08821766,
+        "age_z": -0.21684902,
+        "I(age_z^2)": -0.00796445,
+        "sex_male": -0.11011022,
+        "bmi_z": -0.08237456,
+        "I(bmi_z^2)": -0.02604487
+      }
+    },
+    {
+      "id": "s__Asaccharobacter_celatus",
+      "prevalence": 0.68994413,
+      "mean_abundance": 0.09669555,
+      "residual_sd": 2.18563398,
+      "conformal_abs_residual_95": 3.83387826,
+      "coefficients": {
+        "(Intercept)": 0.6058787,
+        "age_z": -0.09321218,
+        "I(age_z^2)": 0.07332895,
+        "sex_male": -0.4796724,
+        "bmi_z": 0.18312094,
+        "I(bmi_z^2)": -0.11175283
+      }
+    },
+    {
+      "id": "s__Ruminococcus_bicirculans",
+      "prevalence": 0.68854749,
+      "mean_abundance": 0.895567,
+      "residual_sd": 3.02235265,
+      "conformal_abs_residual_95": 4.6182175,
+      "coefficients": {
+        "(Intercept)": 2.09200053,
+        "age_z": -0.13307614,
+        "I(age_z^2)": 0.07817366,
+        "sex_male": -0.50853271,
+        "bmi_z": 0.24062179,
+        "I(bmi_z^2)": -0.13215497
+      }
+    },
+    {
+      "id": "s__Adlercreutzia_equolifaciens",
+      "prevalence": 0.68463687,
+      "mean_abundance": 0.06710039,
+      "residual_sd": 2.02702265,
+      "conformal_abs_residual_95": 3.52872736,
+      "coefficients": {
+        "(Intercept)": 0.36434326,
+        "age_z": -0.06455124,
+        "I(age_z^2)": 0.06688404,
+        "sex_male": -0.41448312,
+        "bmi_z": 0.09048269,
+        "I(bmi_z^2)": -0.09159974
+      }
+    },
+    {
+      "id": "s__Bacteroides_dorei",
+      "prevalence": 0.67458101,
+      "mean_abundance": 2.48531767,
+      "residual_sd": 3.57493384,
+      "conformal_abs_residual_95": 5.33705388,
+      "coefficients": {
+        "(Intercept)": 2.33186248,
+        "age_z": 0.12623367,
+        "I(age_z^2)": -0.09883878,
+        "sex_male": -0.17935987,
+        "bmi_z": -0.0011288,
+        "I(bmi_z^2)": 0.01193638
+      }
+    },
+    {
+      "id": "s__Gordonibacter_pamelaeae",
+      "prevalence": 0.67402235,
+      "mean_abundance": 0.06817437,
+      "residual_sd": 2.16353011,
+      "conformal_abs_residual_95": 3.92482415,
+      "coefficients": {
+        "(Intercept)": 0.11288496,
+        "age_z": -0.00194128,
+        "I(age_z^2)": 0.08796299,
+        "sex_male": -0.47097243,
+        "bmi_z": 0.02304504,
+        "I(bmi_z^2)": -0.0698492
+      }
+    },
+    {
+      "id": "s__Bacteroides_xylanisolvens",
+      "prevalence": 0.6722067,
+      "mean_abundance": 0.39677818,
+      "residual_sd": 2.77800906,
+      "conformal_abs_residual_95": 4.52915154,
+      "coefficients": {
+        "(Intercept)": 0.78223562,
+        "age_z": -0.06143128,
+        "I(age_z^2)": 0.1008215,
+        "sex_male": 0.09717468,
+        "bmi_z": -0.14077462,
+        "I(bmi_z^2)": 0.09218874
+      }
+    },
+    {
+      "id": "s__Lawsonibacter_asaccharolyticus",
+      "prevalence": 0.66913408,
+      "mean_abundance": 0.05061776,
+      "residual_sd": 1.93066599,
+      "conformal_abs_residual_95": 3.30482726,
+      "coefficients": {
+        "(Intercept)": 0.29768236,
+        "age_z": 0.292228,
+        "I(age_z^2)": -0.15143388,
+        "sex_male": -0.27025639,
+        "bmi_z": 0.15278765,
+        "I(bmi_z^2)": -0.00890969
+      }
+    },
+    {
+      "id": "s__Eubacterium_sp_CAG_38",
+      "prevalence": 0.65963687,
+      "mean_abundance": 0.37393944,
+      "residual_sd": 2.70208586,
+      "conformal_abs_residual_95": 4.28747449,
+      "coefficients": {
+        "(Intercept)": 1.01022766,
+        "age_z": 0.09539434,
+        "I(age_z^2)": -0.12797223,
+        "sex_male": 0.10421981,
+        "bmi_z": -0.03702468,
+        "I(bmi_z^2)": 0.05926571
+      }
+    },
+    {
+      "id": "s__Eubacterium_ventriosum",
+      "prevalence": 0.64441341,
+      "mean_abundance": 0.15484409,
+      "residual_sd": 2.41474105,
+      "conformal_abs_residual_95": 3.68826208,
+      "coefficients": {
+        "(Intercept)": 0.70345689,
+        "age_z": -0.08368798,
+        "I(age_z^2)": 0.00871683,
+        "sex_male": 0.16150576,
+        "bmi_z": 0.1434545,
+        "I(bmi_z^2)": -0.05401267
+      }
+    },
+    {
+      "id": "s__Streptococcus_parasanguinis",
+      "prevalence": 0.64441341,
+      "mean_abundance": 0.09697978,
+      "residual_sd": 2.17645865,
+      "conformal_abs_residual_95": 3.91108368,
+      "coefficients": {
+        "(Intercept)": -0.30607009,
+        "age_z": 0.20020961,
+        "I(age_z^2)": 0.32968494,
+        "sex_male": -0.09421053,
+        "bmi_z": 0.11275759,
+        "I(bmi_z^2)": -0.02495413
+      }
+    },
+    {
+      "id": "s__Escherichia_coli",
+      "prevalence": 0.63477654,
+      "mean_abundance": 1.08088675,
+      "residual_sd": 3.08514659,
+      "conformal_abs_residual_95": 5.46462703,
+      "coefficients": {
+        "(Intercept)": 0.56431931,
+        "age_z": 0.24323202,
+        "I(age_z^2)": 0.15087214,
+        "sex_male": 0.17156667,
+        "bmi_z": -0.50324114,
+        "I(bmi_z^2)": 0.13799818
+      }
+    },
+    {
+      "id": "s__Bilophila_wadsworthia",
+      "prevalence": 0.63449721,
+      "mean_abundance": 0.04789187,
+      "residual_sd": 2.03643933,
+      "conformal_abs_residual_95": 3.28508129,
+      "coefficients": {
+        "(Intercept)": 0.08037308,
+        "age_z": -0.00166559,
+        "I(age_z^2)": -0.01552497,
+        "sex_male": -0.37870955,
+        "bmi_z": -0.0814449,
+        "I(bmi_z^2)": 0.08114846
+      }
+    },
+    {
+      "id": "s__Eubacterium_siraeum",
+      "prevalence": 0.60851955,
+      "mean_abundance": 0.85284557,
+      "residual_sd": 3.00610052,
+      "conformal_abs_residual_95": 5.03110725,
+      "coefficients": {
+        "(Intercept)": 1.36208151,
+        "age_z": 0.1682949,
+        "I(age_z^2)": -0.05788034,
+        "sex_male": -0.52132091,
+        "bmi_z": -0.02684627,
+        "I(bmi_z^2)": -0.0561895
+      }
+    },
+    {
+      "id": "s__Lachnospira_pectinoschiza",
+      "prevalence": 0.60824022,
+      "mean_abundance": 0.96398613,
+      "residual_sd": 3.32199036,
+      "conformal_abs_residual_95": 4.81166625,
+      "coefficients": {
+        "(Intercept)": 1.48032406,
+        "age_z": -0.11359296,
+        "I(age_z^2)": -0.11243173,
+        "sex_male": 0.13804874,
+        "bmi_z": 0.15181488,
+        "I(bmi_z^2)": -0.00580555
+      }
+    },
+    {
+      "id": "s__Clostridium_leptum",
+      "prevalence": 0.58715084,
+      "mean_abundance": 0.03937914,
+      "residual_sd": 1.84267907,
+      "conformal_abs_residual_95": 3.53808794,
+      "coefficients": {
+        "(Intercept)": -0.5462708,
+        "age_z": 0.01169647,
+        "I(age_z^2)": 0.09274925,
+        "sex_male": -0.29113905,
+        "bmi_z": 0.11041413,
+        "I(bmi_z^2)": -0.05282897
+      }
+    },
+    {
+      "id": "s__Akkermansia_muciniphila",
+      "prevalence": 0.56997207,
+      "mean_abundance": 1.42496632,
+      "residual_sd": 3.31793362,
+      "conformal_abs_residual_95": 5.35162865,
+      "coefficients": {
+        "(Intercept)": 1.93554794,
+        "age_z": 0.33263903,
+        "I(age_z^2)": -0.19265385,
+        "sex_male": -1.09596314,
+        "bmi_z": -0.01010391,
+        "I(bmi_z^2)": -0.09151783
+      }
+    },
+    {
+      "id": "s__Intestinibacter_bartlettii",
+      "prevalence": 0.56648045,
+      "mean_abundance": 0.10883952,
+      "residual_sd": 2.32708792,
+      "conformal_abs_residual_95": 3.96185018,
+      "coefficients": {
+        "(Intercept)": 0.1145233,
+        "age_z": -0.09050334,
+        "I(age_z^2)": 0.03111603,
+        "sex_male": -0.07884629,
+        "bmi_z": 0.11660056,
+        "I(bmi_z^2)": -0.06279983
+      }
+    },
+    {
+      "id": "s__Roseburia_sp_CAG_471",
+      "prevalence": 0.56284916,
+      "mean_abundance": 0.07681783,
+      "residual_sd": 2.12253473,
+      "conformal_abs_residual_95": 4.533467,
+      "coefficients": {
+        "(Intercept)": -0.96775469,
+        "age_z": -0.09802768,
+        "I(age_z^2)": -0.02732515,
+        "sex_male": 0.27049264,
+        "bmi_z": -0.07746425,
+        "I(bmi_z^2)": -0.01466565
+      }
+    },
+    {
+      "id": "s__Prevotella_copri",
+      "prevalence": 0.55125698,
+      "mean_abundance": 8.75657885,
+      "residual_sd": 4.44801499,
+      "conformal_abs_residual_95": 7.43075939,
+      "coefficients": {
+        "(Intercept)": 1.28464359,
+        "age_z": -0.30585006,
+        "I(age_z^2)": -0.20225141,
+        "sex_male": 1.14750571,
+        "bmi_z": -0.1165987,
+        "I(bmi_z^2)": 0.11101088
+      }
+    },
+    {
+      "id": "s__Butyricimonas_virosa",
+      "prevalence": 0.5472067,
+      "mean_abundance": 0.06809109,
+      "residual_sd": 2.13904704,
+      "conformal_abs_residual_95": 3.69254421,
+      "coefficients": {
+        "(Intercept)": -0.18334514,
+        "age_z": 0.26552318,
+        "I(age_z^2)": -0.11518612,
+        "sex_male": 0.07039951,
+        "bmi_z": -0.17903305,
+        "I(bmi_z^2)": 0.0983187
+      }
+    },
+    {
+      "id": "s__Parasutterella_excrementihominis",
+      "prevalence": 0.54273743,
+      "mean_abundance": 0.16132087,
+      "residual_sd": 2.53746294,
+      "conformal_abs_residual_95": 4.58548961,
+      "coefficients": {
+        "(Intercept)": 0.20767752,
+        "age_z": -0.14592546,
+        "I(age_z^2)": -0.1073805,
+        "sex_male": -0.15502189,
+        "bmi_z": 0.04089465,
+        "I(bmi_z^2)": 0.03647536
+      }
+    },
+    {
+      "id": "s__Ruminococcus_lactaris",
+      "prevalence": 0.52988827,
+      "mean_abundance": 0.41712225,
+      "residual_sd": 3.01270253,
+      "conformal_abs_residual_95": 4.37157374,
+      "coefficients": {
+        "(Intercept)": 1.14769189,
+        "age_z": 0.05793326,
+        "I(age_z^2)": -0.11894049,
+        "sex_male": -0.23258567,
+        "bmi_z": 0.09583819,
+        "I(bmi_z^2)": -0.08891241
+      }
+    },
+    {
+      "id": "s__Firmicutes_bacterium_CAG_110",
+      "prevalence": 0.5273743,
+      "mean_abundance": 0.26113232,
+      "residual_sd": 2.62541966,
+      "conformal_abs_residual_95": 4.35163847,
+      "coefficients": {
+        "(Intercept)": 0.81765914,
+        "age_z": 0.21169601,
+        "I(age_z^2)": -0.1826168,
+        "sex_male": -0.42464311,
+        "bmi_z": -0.06226946,
+        "I(bmi_z^2)": -0.07712555
+      }
+    },
+    {
+      "id": "s__Collinsella_intestinalis",
+      "prevalence": 0.50684358,
+      "mean_abundance": 0.03248466,
+      "residual_sd": 1.72986544,
+      "conformal_abs_residual_95": 3.30821014,
+      "coefficients": {
+        "(Intercept)": -1.26105168,
+        "age_z": -0.07070973,
+        "I(age_z^2)": 0.09385992,
+        "sex_male": 0.24065203,
+        "bmi_z": 0.03235112,
+        "I(bmi_z^2)": -0.02982425
+      }
+    },
+    {
+      "id": "s__Bacteroides_stercoris",
+      "prevalence": 0.50405028,
+      "mean_abundance": 1.63526274,
+      "residual_sd": 3.59588407,
+      "conformal_abs_residual_95": 6.15271563,
+      "coefficients": {
+        "(Intercept)": 0.71150943,
+        "age_z": -0.11745904,
+        "I(age_z^2)": 0.01734681,
+        "sex_male": 0.30501268,
+        "bmi_z": -0.17848566,
+        "I(bmi_z^2)": 0.08901168
+      }
+    },
+    {
+      "id": "s__Streptococcus_thermophilus",
+      "prevalence": 0.49860335,
+      "mean_abundance": 0.29106818,
+      "residual_sd": 2.69539569,
+      "conformal_abs_residual_95": 5.0881966,
+      "coefficients": {
+        "(Intercept)": 0.21389406,
+        "age_z": -0.02150165,
+        "I(age_z^2)": 0.09713853,
+        "sex_male": -0.41499471,
+        "bmi_z": 0.27969516,
+        "I(bmi_z^2)": -0.08588556
+      }
+    },
+    {
+      "id": "s__Alistipes_indistinctus",
+      "prevalence": 0.48240223,
+      "mean_abundance": 0.08588846,
+      "residual_sd": 2.17749706,
+      "conformal_abs_residual_95": 4.06860743,
+      "coefficients": {
+        "(Intercept)": -0.17635509,
+        "age_z": 0.03091519,
+        "I(age_z^2)": -0.10054649,
+        "sex_male": -0.26529736,
+        "bmi_z": -0.17274152,
+        "I(bmi_z^2)": -0.0065688
+      }
+    },
+    {
+      "id": "s__Coprococcus_eutactus",
+      "prevalence": 0.47751397,
+      "mean_abundance": 0.98768629,
+      "residual_sd": 3.3775043,
+      "conformal_abs_residual_95": 5.62802104,
+      "coefficients": {
+        "(Intercept)": 0.90422799,
+        "age_z": -0.12336839,
+        "I(age_z^2)": -0.14961964,
+        "sex_male": -0.03276664,
+        "bmi_z": 0.10949664,
+        "I(bmi_z^2)": -0.1118296
+      }
+    },
+    {
+      "id": "s__Bacteroides_cellulosilyticus",
+      "prevalence": 0.47681564,
+      "mean_abundance": 0.40672888,
+      "residual_sd": 2.86382944,
+      "conformal_abs_residual_95": 5.25987725,
+      "coefficients": {
+        "(Intercept)": 0.26255668,
+        "age_z": 0.12585259,
+        "I(age_z^2)": -0.02237797,
+        "sex_male": -0.34293018,
+        "bmi_z": -0.06936513,
+        "I(bmi_z^2)": 0.02234879
+      }
+    },
+    {
+      "id": "s__[Collinsella]_massiliensis",
+      "prevalence": 0.475,
+      "mean_abundance": 0.01654345,
+      "residual_sd": 1.80690745,
+      "conformal_abs_residual_95": 3.53950622,
+      "coefficients": {
+        "(Intercept)": -1.07535011,
+        "age_z": -0.16159991,
+        "I(age_z^2)": 0.08270608,
+        "sex_male": 0.11195779,
+        "bmi_z": 0.04185256,
+        "I(bmi_z^2)": -0.0679485
+      }
+    },
+    {
+      "id": "s__Slackia_isoflavoniconvertens",
+      "prevalence": 0.47234637,
+      "mean_abundance": 0.12872781,
+      "residual_sd": 2.54049123,
+      "conformal_abs_residual_95": 4.59730563,
+      "coefficients": {
+        "(Intercept)": -0.37908615,
+        "age_z": 0.07633365,
+        "I(age_z^2)": -0.00989184,
+        "sex_male": 0.39848441,
+        "bmi_z": 0.16006827,
+        "I(bmi_z^2)": -0.03361358
+      }
+    },
+    {
+      "id": "s__Eggerthella_lenta",
+      "prevalence": 0.44427374,
+      "mean_abundance": 0.07384247,
+      "residual_sd": 2.32159503,
+      "conformal_abs_residual_95": 4.59569173,
+      "coefficients": {
+        "(Intercept)": -0.70359555,
+        "age_z": 0.09588849,
+        "I(age_z^2)": 0.12777283,
+        "sex_male": -0.21312528,
+        "bmi_z": -0.06214444,
+        "I(bmi_z^2)": 0.00578991
+      }
+    },
+    {
+      "id": "s__Enorma_massiliensis",
+      "prevalence": 0.43854749,
+      "mean_abundance": 0.01975529,
+      "residual_sd": 1.60625181,
+      "conformal_abs_residual_95": 3.25218137,
+      "coefficients": {
+        "(Intercept)": -1.37919598,
+        "age_z": -0.03847425,
+        "I(age_z^2)": 0.03671562,
+        "sex_male": 0.09495686,
+        "bmi_z": -0.02911415,
+        "I(bmi_z^2)": -0.01758435
+      }
+    },
+    {
+      "id": "s__Bacteroides_fragilis",
+      "prevalence": 0.43198324,
+      "mean_abundance": 0.47163417,
+      "residual_sd": 2.99571274,
+      "conformal_abs_residual_95": 5.64049648,
+      "coefficients": {
+        "(Intercept)": -0.11231062,
+        "age_z": 0.02154214,
+        "I(age_z^2)": 0.08807247,
+        "sex_male": -0.14755308,
+        "bmi_z": -0.13471161,
+        "I(bmi_z^2)": 0.10156914
+      }
+    },
+    {
+      "id": "s__Anaeromassilibacillus_sp_An250",
+      "prevalence": 0.42513966,
+      "mean_abundance": 0.01802846,
+      "residual_sd": 1.63178512,
+      "conformal_abs_residual_95": 3.2339847,
+      "coefficients": {
+        "(Intercept)": -0.87761198,
+        "age_z": 0.11707342,
+        "I(age_z^2)": -0.03120315,
+        "sex_male": -0.31627859,
+        "bmi_z": 0.04992968,
+        "I(bmi_z^2)": -0.02664347
+      }
+    },
+    {
+      "id": "s__Intestinimonas_butyriciproducens",
+      "prevalence": 0.41089385,
+      "mean_abundance": 0.03113715,
+      "residual_sd": 1.81855327,
+      "conformal_abs_residual_95": 3.68636014,
+      "coefficients": {
+        "(Intercept)": -0.95845284,
+        "age_z": 0.09408297,
+        "I(age_z^2)": 0.00096387,
+        "sex_male": -0.32820724,
+        "bmi_z": -0.19328778,
+        "I(bmi_z^2)": 0.05299525
+      }
+    },
+    {
+      "id": "s__Ruminococcus_gnavus",
+      "prevalence": 0.40223464,
+      "mean_abundance": 0.33583053,
+      "residual_sd": 2.81117498,
+      "conformal_abs_residual_95": 5.82835777,
+      "coefficients": {
+        "(Intercept)": -0.99211005,
+        "age_z": 0.14878794,
+        "I(age_z^2)": 0.28884713,
+        "sex_male": 0.39678258,
+        "bmi_z": -0.02496137,
+        "I(bmi_z^2)": 0.09584567
+      }
+    },
+    {
+      "id": "s__Lactobacillus_rogosae",
+      "prevalence": 0.39986034,
+      "mean_abundance": 0.02819367,
+      "residual_sd": 1.76834098,
+      "conformal_abs_residual_95": 3.56684331,
+      "coefficients": {
+        "(Intercept)": -0.87236405,
+        "age_z": -0.02585417,
+        "I(age_z^2)": -0.09168235,
+        "sex_male": 0.06370856,
+        "bmi_z": 0.11749295,
+        "I(bmi_z^2)": -0.02858429
+      }
+    },
+    {
+      "id": "s__Butyricimonas_synergistica",
+      "prevalence": 0.3924581,
+      "mean_abundance": 0.03446897,
+      "residual_sd": 1.9505505,
+      "conformal_abs_residual_95": 3.80135712,
+      "coefficients": {
+        "(Intercept)": -0.77234959,
+        "age_z": 0.00862716,
+        "I(age_z^2)": -0.13906627,
+        "sex_male": -0.04119349,
+        "bmi_z": -0.03934723,
+        "I(bmi_z^2)": 0.0472996
+      }
+    },
+    {
+      "id": "s__Bacteroides_massiliensis",
+      "prevalence": 0.3900838,
+      "mean_abundance": 0.34404761,
+      "residual_sd": 2.94244334,
+      "conformal_abs_residual_95": 5.3973291,
+      "coefficients": {
+        "(Intercept)": -0.14743343,
+        "age_z": -0.11470444,
+        "I(age_z^2)": -0.09417071,
+        "sex_male": 0.45650151,
+        "bmi_z": -0.03782889,
+        "I(bmi_z^2)": 0.00907986
+      }
+    },
+    {
+      "id": "s__Haemophilus_parainfluenzae",
+      "prevalence": 0.3877095,
+      "mean_abundance": 0.04619162,
+      "residual_sd": 2.01398271,
+      "conformal_abs_residual_95": 4.05955579,
+      "coefficients": {
+        "(Intercept)": -1.35796627,
+        "age_z": 0.1117241,
+        "I(age_z^2)": 0.14757358,
+        "sex_male": 0.37171796,
+        "bmi_z": -0.33516174,
+        "I(bmi_z^2)": 0.10683907
+      }
+    },
+    {
+      "id": "s__Holdemanella_biformis",
+      "prevalence": 0.38715084,
+      "mean_abundance": 0.26291594,
+      "residual_sd": 2.73223365,
+      "conformal_abs_residual_95": 5.25322076,
+      "coefficients": {
+        "(Intercept)": -0.39314801,
+        "age_z": -0.00360245,
+        "I(age_z^2)": -0.07583391,
+        "sex_male": 0.50998785,
+        "bmi_z": 0.13085811,
+        "I(bmi_z^2)": -0.00496012
+      }
+    },
+    {
+      "id": "s__Coprobacter_fastidiosus",
+      "prevalence": 0.3853352,
+      "mean_abundance": 0.08426572,
+      "residual_sd": 2.2370119,
+      "conformal_abs_residual_95": 4.36490931,
+      "coefficients": {
+        "(Intercept)": -0.44724035,
+        "age_z": 0.03227094,
+        "I(age_z^2)": -0.07779219,
+        "sex_male": -0.28671243,
+        "bmi_z": -0.01639733,
+        "I(bmi_z^2)": 0.02162542
+      }
+    },
+    {
+      "id": "s__Clostridium_sp_CAG_58",
+      "prevalence": 0.37486034,
+      "mean_abundance": 0.05968617,
+      "residual_sd": 2.19775316,
+      "conformal_abs_residual_95": 4.07677129,
+      "coefficients": {
+        "(Intercept)": -0.65310809,
+        "age_z": 0.14089522,
+        "I(age_z^2)": -0.03601028,
+        "sex_male": 0.03244482,
+        "bmi_z": 0.25917076,
+        "I(bmi_z^2)": 0.00547566
+      }
+    },
+    {
+      "id": "s__Methanobrevibacter_smithii",
+      "prevalence": 0.37290503,
+      "mean_abundance": 0.73713871,
+      "residual_sd": 3.07665589,
+      "conformal_abs_residual_95": 5.82115585,
+      "coefficients": {
+        "(Intercept)": 0.34724845,
+        "age_z": 0.20116262,
+        "I(age_z^2)": -0.11433036,
+        "sex_male": -0.27071763,
+        "bmi_z": -0.04529935,
+        "I(bmi_z^2)": -0.10021775
+      }
+    },
+    {
+      "id": "s__Firmicutes_bacterium_CAG_95",
+      "prevalence": 0.36871508,
+      "mean_abundance": 0.07867275,
+      "residual_sd": 2.07716895,
+      "conformal_abs_residual_95": 4.32040065,
+      "coefficients": {
+        "(Intercept)": -0.64946962,
+        "age_z": 0.14378524,
+        "I(age_z^2)": -0.13055546,
+        "sex_male": -0.18831626,
+        "bmi_z": -0.23365305,
+        "I(bmi_z^2)": 0.01867041
+      }
+    },
+    {
+      "id": "s__Holdemania_filiformis",
+      "prevalence": 0.36382682,
+      "mean_abundance": 0.01013173,
+      "residual_sd": 1.4656976,
+      "conformal_abs_residual_95": 3.01512459,
+      "coefficients": {
+        "(Intercept)": -1.38009829,
+        "age_z": 0.12887028,
+        "I(age_z^2)": 0.00887858,
+        "sex_male": -0.00035332,
+        "bmi_z": 0.04720431,
+        "I(bmi_z^2)": 0.03458539
+      }
+    },
+    {
+      "id": "s__Proteobacteria_bacterium_CAG_139",
+      "prevalence": 0.36159218,
+      "mean_abundance": 0.12906368,
+      "residual_sd": 2.32987967,
+      "conformal_abs_residual_95": 5.21920391,
+      "coefficients": {
+        "(Intercept)": -0.88181115,
+        "age_z": -0.09201183,
+        "I(age_z^2)": -0.0123533,
+        "sex_male": -0.08772269,
+        "bmi_z": 0.01819819,
+        "I(bmi_z^2)": 0.07596173
+      }
+    },
+    {
+      "id": "s__Veillonella_parvula",
+      "prevalence": 0.35488827,
+      "mean_abundance": 0.06612292,
+      "residual_sd": 1.97556532,
+      "conformal_abs_residual_95": 4.08158411,
+      "coefficients": {
+        "(Intercept)": -1.47852377,
+        "age_z": 0.20698607,
+        "I(age_z^2)": 0.20919892,
+        "sex_male": 0.21759083,
+        "bmi_z": -0.18306407,
+        "I(bmi_z^2)": 0.0972014
+      }
+    },
+    {
+      "id": "s__Bifidobacterium_pseudocatenulatum",
+      "prevalence": 0.35446927,
+      "mean_abundance": 0.35870538,
+      "residual_sd": 2.79869447,
+      "conformal_abs_residual_95": 5.71107108,
+      "coefficients": {
+        "(Intercept)": -0.53571387,
+        "age_z": -0.00328223,
+        "I(age_z^2)": -0.04489959,
+        "sex_male": 0.15382903,
+        "bmi_z": -0.31288232,
+        "I(bmi_z^2)": 0.05636163
+      }
+    },
+    {
+      "id": "s__Phascolarctobacterium_faecium",
+      "prevalence": 0.35,
+      "mean_abundance": 0.17596487,
+      "residual_sd": 2.69955468,
+      "conformal_abs_residual_95": 5.21831449,
+      "coefficients": {
+        "(Intercept)": -0.46642285,
+        "age_z": 0.0709471,
+        "I(age_z^2)": -0.11308591,
+        "sex_male": -0.00991042,
+        "bmi_z": -0.39246429,
+        "I(bmi_z^2)": 0.08113661
+      }
+    },
+    {
+      "id": "s__Paraprevotella_xylaniphila",
+      "prevalence": 0.34427374,
+      "mean_abundance": 0.16329814,
+      "residual_sd": 2.5897405,
+      "conformal_abs_residual_95": 4.84885868,
+      "coefficients": {
+        "(Intercept)": -0.62984021,
+        "age_z": -0.06251415,
+        "I(age_z^2)": 0.02417204,
+        "sex_male": 0.35425236,
+        "bmi_z": 0.0617585,
+        "I(bmi_z^2)": 0.01458379
+      }
+    },
+    {
+      "id": "s__Eubacterium_sp_CAG_180",
+      "prevalence": 0.33952514,
+      "mean_abundance": 1.06280476,
+      "residual_sd": 3.36228785,
+      "conformal_abs_residual_95": 6.46030467,
+      "coefficients": {
+        "(Intercept)": -0.21276708,
+        "age_z": 0.20612796,
+        "I(age_z^2)": 0.11857673,
+        "sex_male": 0.17912563,
+        "bmi_z": 0.29911376,
+        "I(bmi_z^2)": -0.05572545
+      }
+    },
+    {
+      "id": "s__Olsenella_scatoligenes",
+      "prevalence": 0.3349162,
+      "mean_abundance": 0.01775844,
+      "residual_sd": 1.52456652,
+      "conformal_abs_residual_95": 3.36294836,
+      "coefficients": {
+        "(Intercept)": -1.59822937,
+        "age_z": -0.0206442,
+        "I(age_z^2)": -0.03076416,
+        "sex_male": 0.22542855,
+        "bmi_z": -0.09348086,
+        "I(bmi_z^2)": 0.01359651
+      }
+    },
+    {
+      "id": "s__Turicibacter_sanguinis",
+      "prevalence": 0.33212291,
+      "mean_abundance": 0.05326487,
+      "residual_sd": 1.94201354,
+      "conformal_abs_residual_95": 4.10009974,
+      "coefficients": {
+        "(Intercept)": -1.1741854,
+        "age_z": -0.12005834,
+        "I(age_z^2)": 0.07626307,
+        "sex_male": 0.03974257,
+        "bmi_z": -0.14298271,
+        "I(bmi_z^2)": -0.00470635
+      }
+    },
+    {
+      "id": "s__Clostridium_bolteae",
+      "prevalence": 0.30865922,
+      "mean_abundance": 0.03307753,
+      "residual_sd": 1.87689746,
+      "conformal_abs_residual_95": 4.27560931,
+      "coefficients": {
+        "(Intercept)": -1.59430702,
+        "age_z": 0.17796125,
+        "I(age_z^2)": 0.08348192,
+        "sex_male": 0.15372666,
+        "bmi_z": -0.09813932,
+        "I(bmi_z^2)": 0.11458245
+      }
+    },
+    {
+      "id": "s__Bacteroides_eggerthii",
+      "prevalence": 0.30796089,
+      "mean_abundance": 0.64248024,
+      "residual_sd": 2.89473423,
+      "conformal_abs_residual_95": 6.35599638,
+      "coefficients": {
+        "(Intercept)": -0.53888323,
+        "age_z": 0.07976109,
+        "I(age_z^2)": -0.12205782,
+        "sex_male": 0.27494463,
+        "bmi_z": -0.15693023,
+        "I(bmi_z^2)": 0.02685448
+      }
+    },
+    {
+      "id": "s__Eubacterium_sp_CAG_274",
+      "prevalence": 0.29972067,
+      "mean_abundance": 0.11789037,
+      "residual_sd": 2.41141644,
+      "conformal_abs_residual_95": 4.96531696,
+      "coefficients": {
+        "(Intercept)": -0.82102939,
+        "age_z": -0.02684547,
+        "I(age_z^2)": -0.07878321,
+        "sex_male": 0.23388921,
+        "bmi_z": 0.07518887,
+        "I(bmi_z^2)": 0.02065005
+      }
+    },
+    {
+      "id": "s__Turicimonas_muris",
+      "prevalence": 0.29944134,
+      "mean_abundance": 0.01435416,
+      "residual_sd": 1.58260231,
+      "conformal_abs_residual_95": 3.51913233,
+      "coefficients": {
+        "(Intercept)": -1.48583595,
+        "age_z": -0.08981139,
+        "I(age_z^2)": 0.01358926,
+        "sex_male": 0.05209932,
+        "bmi_z": 0.01672831,
+        "I(bmi_z^2)": 0.04267043
+      }
+    },
+    {
+      "id": "s__Alistipes_inops",
+      "prevalence": 0.2972067,
+      "mean_abundance": 0.29555006,
+      "residual_sd": 2.61000931,
+      "conformal_abs_residual_95": 5.57148586,
+      "coefficients": {
+        "(Intercept)": -0.24743323,
+        "age_z": 0.25643039,
+        "I(age_z^2)": -0.15080525,
+        "sex_male": -0.43112062,
+        "bmi_z": -0.00997954,
+        "I(bmi_z^2)": -0.0454428
+      }
+    },
+    {
+      "id": "s__Sutterella_parvirubra",
+      "prevalence": 0.29650838,
+      "mean_abundance": 0.01634706,
+      "residual_sd": 1.51962313,
+      "conformal_abs_residual_95": 3.4795125,
+      "coefficients": {
+        "(Intercept)": -1.68336827,
+        "age_z": -0.02511154,
+        "I(age_z^2)": -0.03917326,
+        "sex_male": 0.43922035,
+        "bmi_z": 0.06039017,
+        "I(bmi_z^2)": 0.06745936
+      }
+    },
+    {
+      "id": "s__Firmicutes_bacterium_CAG_170",
+      "prevalence": 0.28840782,
+      "mean_abundance": 0.09001816,
+      "residual_sd": 2.06174613,
+      "conformal_abs_residual_95": 4.48633493,
+      "coefficients": {
+        "(Intercept)": -0.9806986,
+        "age_z": 0.15785306,
+        "I(age_z^2)": -0.06088056,
+        "sex_male": -0.02224613,
+        "bmi_z": -0.03880272,
+        "I(bmi_z^2)": -0.01150254
+      }
+    },
+    {
+      "id": "s__Firmicutes_bacterium_CAG_94",
+      "prevalence": 0.28449721,
+      "mean_abundance": 0.04016211,
+      "residual_sd": 1.85751274,
+      "conformal_abs_residual_95": 4.08426973,
+      "coefficients": {
+        "(Intercept)": -1.00043468,
+        "age_z": 0.20284101,
+        "I(age_z^2)": -0.08682078,
+        "sex_male": -0.22086449,
+        "bmi_z": 0.01285147,
+        "I(bmi_z^2)": -0.0362931
+      }
+    },
+    {
+      "id": "s__Bacteroides_finegoldii",
+      "prevalence": 0.28156425,
+      "mean_abundance": 0.18512472,
+      "residual_sd": 2.44660707,
+      "conformal_abs_residual_95": 5.24639078,
+      "coefficients": {
+        "(Intercept)": -1.00255617,
+        "age_z": -0.09262533,
+        "I(age_z^2)": -0.036748,
+        "sex_male": 0.41925875,
+        "bmi_z": -0.02483313,
+        "I(bmi_z^2)": 0.03357958
+      }
+    },
+    {
+      "id": "s__Clostridium_sp_CAG_167",
+      "prevalence": 0.28156425,
+      "mean_abundance": 0.07525708,
+      "residual_sd": 2.1274287,
+      "conformal_abs_residual_95": 4.54270545,
+      "coefficients": {
+        "(Intercept)": -0.69699495,
+        "age_z": 0.06315889,
+        "I(age_z^2)": -0.04770292,
+        "sex_male": -0.34346955,
+        "bmi_z": -0.02044036,
+        "I(bmi_z^2)": -0.05709395
+      }
+    },
+    {
+      "id": "s__Bifidobacterium_bifidum",
+      "prevalence": 0.27723464,
+      "mean_abundance": 0.40055728,
+      "residual_sd": 2.8834121,
+      "conformal_abs_residual_95": 6.04459862,
+      "coefficients": {
+        "(Intercept)": -0.72930373,
+        "age_z": -0.40874744,
+        "I(age_z^2)": 0.17701492,
+        "sex_male": 0.02622905,
+        "bmi_z": 0.12782889,
+        "I(bmi_z^2)": -0.02719093
+      }
+    },
+    {
+      "id": "s__Eubacterium_sp_CAG_251",
+      "prevalence": 0.27416201,
+      "mean_abundance": 0.37352818,
+      "residual_sd": 2.92026169,
+      "conformal_abs_residual_95": 5.85710733,
+      "coefficients": {
+        "(Intercept)": -0.58604184,
+        "age_z": 0.0718863,
+        "I(age_z^2)": 0.09359572,
+        "sex_male": -0.02359512,
+        "bmi_z": 0.10654027,
+        "I(bmi_z^2)": -0.03868557
+      }
+    },
+    {
+      "id": "s__Coprobacter_secundus",
+      "prevalence": 0.27053073,
+      "mean_abundance": 0.01967643,
+      "residual_sd": 1.60492213,
+      "conformal_abs_residual_95": 3.66584673,
+      "coefficients": {
+        "(Intercept)": -1.26305299,
+        "age_z": -0.01766472,
+        "I(age_z^2)": -0.09433605,
+        "sex_male": -0.05235582,
+        "bmi_z": -0.00162544,
+        "I(bmi_z^2)": 0.0096404
+      }
+    },
+    {
+      "id": "s__Dialister_invisus",
+      "prevalence": 0.26955307,
+      "mean_abundance": 0.14100136,
+      "residual_sd": 2.53806258,
+      "conformal_abs_residual_95": 5.36779153,
+      "coefficients": {
+        "(Intercept)": -1.04681009,
+        "age_z": -0.27178164,
+        "I(age_z^2)": 0.19736603,
+        "sex_male": -0.07739552,
+        "bmi_z": 0.06259714,
+        "I(bmi_z^2)": 0.03366338
+      }
+    },
+    {
+      "id": "s__Clostridium_innocuum",
+      "prevalence": 0.26452514,
+      "mean_abundance": 0.02530473,
+      "residual_sd": 1.67693753,
+      "conformal_abs_residual_95": 3.82039732,
+      "coefficients": {
+        "(Intercept)": -1.6444221,
+        "age_z": 0.03611216,
+        "I(age_z^2)": 0.13795596,
+        "sex_male": 0.02830428,
+        "bmi_z": -0.00943854,
+        "I(bmi_z^2)": 0.00017446
+      }
+    },
+    {
+      "id": "s__Bacteroides_intestinalis",
+      "prevalence": 0.26103352,
+      "mean_abundance": 0.23267752,
+      "residual_sd": 2.38813759,
+      "conformal_abs_residual_95": 5.50022286,
+      "coefficients": {
+        "(Intercept)": -0.99292103,
+        "age_z": 0.10616014,
+        "I(age_z^2)": -0.04939551,
+        "sex_male": 0.03600071,
+        "bmi_z": -0.36287962,
+        "I(bmi_z^2)": 0.05415124
+      }
+    },
+    {
+      "id": "s__Clostridium_spiroforme",
+      "prevalence": 0.25977654,
+      "mean_abundance": 0.01580525,
+      "residual_sd": 1.63073475,
+      "conformal_abs_residual_95": 3.562041,
+      "coefficients": {
+        "(Intercept)": -1.49232684,
+        "age_z": -0.10136186,
+        "I(age_z^2)": 0.10301436,
+        "sex_male": 0.02637489,
+        "bmi_z": 0.05345483,
+        "I(bmi_z^2)": -0.03141266
+      }
+    },
+    {
+      "id": "s__Clostridium_disporicum",
+      "prevalence": 0.25544693,
+      "mean_abundance": 0.05058617,
+      "residual_sd": 1.88755769,
+      "conformal_abs_residual_95": 4.31386886,
+      "coefficients": {
+        "(Intercept)": -1.30753768,
+        "age_z": 0.17706311,
+        "I(age_z^2)": 0.03000799,
+        "sex_male": 0.05246514,
+        "bmi_z": 0.0193936,
+        "I(bmi_z^2)": -0.0246107
+      }
+    },
+    {
+      "id": "s__Veillonella_dispar",
+      "prevalence": 0.25488827,
+      "mean_abundance": 0.01578979,
+      "residual_sd": 1.51507444,
+      "conformal_abs_residual_95": 3.31681069,
+      "coefficients": {
+        "(Intercept)": -1.7664588,
+        "age_z": 0.0692853,
+        "I(age_z^2)": 0.13618088,
+        "sex_male": 0.189319,
+        "bmi_z": -0.06063874,
+        "I(bmi_z^2)": 0.04144736
+      }
+    },
+    {
+      "id": "s__Anaerotruncus_colihominis",
+      "prevalence": 0.2523743,
+      "mean_abundance": 0.01001943,
+      "residual_sd": 1.43859379,
+      "conformal_abs_residual_95": 3.25965423,
+      "coefficients": {
+        "(Intercept)": -1.66223189,
+        "age_z": 0.03067398,
+        "I(age_z^2)": 0.04845435,
+        "sex_male": -0.05768956,
+        "bmi_z": -0.05852422,
+        "I(bmi_z^2)": 0.03030618
+      }
+    },
+    {
+      "id": "s__Ruminococcus_callidus",
+      "prevalence": 0.25041899,
+      "mean_abundance": 0.02057468,
+      "residual_sd": 1.60644679,
+      "conformal_abs_residual_95": 3.66367336,
+      "coefficients": {
+        "(Intercept)": -1.46723224,
+        "age_z": -0.11295264,
+        "I(age_z^2)": 0.03832676,
+        "sex_male": -0.00106159,
+        "bmi_z": 0.05181827,
+        "I(bmi_z^2)": -0.00094711
+      }
+    },
+    {
+      "id": "s__Desulfovibrio_piger",
+      "prevalence": 0.24986034,
+      "mean_abundance": 0.11411064,
+      "residual_sd": 2.3599446,
+      "conformal_abs_residual_95": 4.95274907,
+      "coefficients": {
+        "(Intercept)": -1.0011921,
+        "age_z": 0.07849225,
+        "I(age_z^2)": -0.01918949,
+        "sex_male": 0.17893898,
+        "bmi_z": -0.09513907,
+        "I(bmi_z^2)": 0.02725589
+      }
+    },
+    {
+      "id": "s__Roseburia_sp_CAG_309",
+      "prevalence": 0.24790503,
+      "mean_abundance": 0.01568914,
+      "residual_sd": 1.50946754,
+      "conformal_abs_residual_95": 3.34268783,
+      "coefficients": {
+        "(Intercept)": -1.33194075,
+        "age_z": 0.11336443,
+        "I(age_z^2)": -0.03960959,
+        "sex_male": -0.12077302,
+        "bmi_z": -0.05120323,
+        "I(bmi_z^2)": -0.01183534
+      }
+    },
+    {
+      "id": "s__Veillonella_atypica",
+      "prevalence": 0.24636872,
+      "mean_abundance": 0.02866452,
+      "residual_sd": 1.62726676,
+      "conformal_abs_residual_95": 3.62984239,
+      "coefficients": {
+        "(Intercept)": -1.82653999,
+        "age_z": 0.16559423,
+        "I(age_z^2)": 0.16056263,
+        "sex_male": 0.20744058,
+        "bmi_z": -0.04011609,
+        "I(bmi_z^2)": 0.04394743
+      }
+    },
+    {
+      "id": "s__Roseburia_sp_CAG_182",
+      "prevalence": 0.24608939,
+      "mean_abundance": 0.07053764,
+      "residual_sd": 2.00211329,
+      "conformal_abs_residual_95": 4.46158907,
+      "coefficients": {
+        "(Intercept)": -1.12218181,
+        "age_z": -0.05596571,
+        "I(age_z^2)": -0.03126981,
+        "sex_male": 0.00621007,
+        "bmi_z": -0.04917966,
+        "I(bmi_z^2)": -0.02492905
+      }
+    },
+    {
+      "id": "s__Bacteroides_salyersiae",
+      "prevalence": 0.24567039,
+      "mean_abundance": 0.14402263,
+      "residual_sd": 2.3422351,
+      "conformal_abs_residual_95": 5.36808252,
+      "coefficients": {
+        "(Intercept)": -0.94424269,
+        "age_z": -0.01927907,
+        "I(age_z^2)": -0.11372449,
+        "sex_male": 0.03856847,
+        "bmi_z": -0.13811011,
+        "I(bmi_z^2)": 0.01472692
+      }
+    },
+    {
+      "id": "s__Bacteroides_plebeius",
+      "prevalence": 0.24273743,
+      "mean_abundance": 1.19642893,
+      "residual_sd": 3.10074255,
+      "conformal_abs_residual_95": 7.28478819,
+      "coefficients": {
+        "(Intercept)": -0.97518895,
+        "age_z": 0.13538371,
+        "I(age_z^2)": -0.0484799,
+        "sex_male": 0.4933168,
+        "bmi_z": -0.40428441,
+        "I(bmi_z^2)": 0.11908791
+      }
+    },
+    {
+      "id": "s__Bacteroides_galacturonicus",
+      "prevalence": 0.23673184,
+      "mean_abundance": 0.02274065,
+      "residual_sd": 1.58422482,
+      "conformal_abs_residual_95": 3.77208045,
+      "coefficients": {
+        "(Intercept)": -1.45000772,
+        "age_z": -0.05046357,
+        "I(age_z^2)": -0.02672373,
+        "sex_male": 0.07119824,
+        "bmi_z": 0.06549868,
+        "I(bmi_z^2)": -0.01378733
+      }
+    },
+    {
+      "id": "s__Firmicutes_bacterium_CAG_145",
+      "prevalence": 0.23659218,
+      "mean_abundance": 0.03146614,
+      "residual_sd": 1.61135238,
+      "conformal_abs_residual_95": 3.58196259,
+      "coefficients": {
+        "(Intercept)": -1.4258861,
+        "age_z": 0.10040943,
+        "I(age_z^2)": 0.02657765,
+        "sex_male": -0.19321903,
+        "bmi_z": 0.00802304,
+        "I(bmi_z^2)": -0.01423723
+      }
+    },
+    {
+      "id": "s__Phascolarctobacterium_succinatutens",
+      "prevalence": 0.23435754,
+      "mean_abundance": 0.49458386,
+      "residual_sd": 3.06698757,
+      "conformal_abs_residual_95": 6.54421759,
+      "coefficients": {
+        "(Intercept)": -1.06864558,
+        "age_z": 0.17626663,
+        "I(age_z^2)": 0.08215039,
+        "sex_male": 0.68346747,
+        "bmi_z": 0.039654,
+        "I(bmi_z^2)": 0.07079785
+      }
+    },
+    {
+      "id": "s__Bacteroides_clarus",
+      "prevalence": 0.2277933,
+      "mean_abundance": 0.10391027,
+      "residual_sd": 2.15444643,
+      "conformal_abs_residual_95": 5.04210896,
+      "coefficients": {
+        "(Intercept)": -1.09497119,
+        "age_z": -0.04705756,
+        "I(age_z^2)": -0.07600711,
+        "sex_male": 0.00928998,
+        "bmi_z": -0.03272335,
+        "I(bmi_z^2)": 0.01055185
+      }
+    },
+    {
+      "id": "s__Bacteroides_sp_CAG_144",
+      "prevalence": 0.22108939,
+      "mean_abundance": 0.13058492,
+      "residual_sd": 2.28674154,
+      "conformal_abs_residual_95": 5.292687,
+      "coefficients": {
+        "(Intercept)": -0.81211537,
+        "age_z": 0.01419117,
+        "I(age_z^2)": -0.18698555,
+        "sex_male": -0.10222701,
+        "bmi_z": 0.02081253,
+        "I(bmi_z^2)": -0.01068722
+      }
+    },
+    {
+      "id": "s__Eisenbergiella_tayi",
+      "prevalence": 0.21243017,
+      "mean_abundance": 0.02630935,
+      "residual_sd": 1.49505685,
+      "conformal_abs_residual_95": 3.47244601,
+      "coefficients": {
+        "(Intercept)": -1.623414,
+        "age_z": 0.07675876,
+        "I(age_z^2)": 0.05316831,
+        "sex_male": -0.20135991,
+        "bmi_z": -0.00471347,
+        "I(bmi_z^2)": 0.00937287
+      }
+    },
+    {
+      "id": "s__Parabacteroides_goldsteinii",
+      "prevalence": 0.20125698,
+      "mean_abundance": 0.05596102,
+      "residual_sd": 1.85519015,
+      "conformal_abs_residual_95": 4.33990418,
+      "coefficients": {
+        "(Intercept)": -1.39165202,
+        "age_z": 0.15219923,
+        "I(age_z^2)": -0.0474298,
+        "sex_male": 0.0376508,
+        "bmi_z": -0.24844153,
+        "I(bmi_z^2)": 0.05024636
+      }
+    },
+    {
+      "id": "s__Bifidobacterium_catenulatum",
+      "prevalence": 0.19846369,
+      "mean_abundance": 0.19067865,
+      "residual_sd": 2.17794838,
+      "conformal_abs_residual_95": 5.35980003,
+      "coefficients": {
+        "(Intercept)": -1.41216302,
+        "age_z": -0.33147377,
+        "I(age_z^2)": 0.09613242,
+        "sex_male": 0.16924325,
+        "bmi_z": 0.02440665,
+        "I(bmi_z^2)": -0.01982344
+      }
+    },
+    {
+      "id": "s__Lactococcus_lactis",
+      "prevalence": 0.19636872,
+      "mean_abundance": 0.02087312,
+      "residual_sd": 1.4789418,
+      "conformal_abs_residual_95": 3.41940982,
+      "coefficients": {
+        "(Intercept)": -1.67009542,
+        "age_z": -0.04734788,
+        "I(age_z^2)": 0.05901466,
+        "sex_male": -0.03938826,
+        "bmi_z": 0.08599374,
+        "I(bmi_z^2)": -0.00873965
+      }
+    },
+    {
+      "id": "s__Hungatella_hathewayi",
+      "prevalence": 0.19357542,
+      "mean_abundance": 0.01762159,
+      "residual_sd": 1.4528509,
+      "conformal_abs_residual_95": 3.48943766,
+      "coefficients": {
+        "(Intercept)": -1.88758061,
+        "age_z": 0.09334893,
+        "I(age_z^2)": 0.06564615,
+        "sex_male": 0.0558895,
+        "bmi_z": -0.14437346,
+        "I(bmi_z^2)": 0.05208401
+      }
+    },
+    {
+      "id": "s__Haemophilus_sp_HMSC71H05",
+      "prevalence": 0.18980447,
+      "mean_abundance": 0.01050316,
+      "residual_sd": 1.30741979,
+      "conformal_abs_residual_95": 2.83317748,
+      "coefficients": {
+        "(Intercept)": -1.93304173,
+        "age_z": -0.02542045,
+        "I(age_z^2)": 0.07399036,
+        "sex_male": 0.13768622,
+        "bmi_z": -0.06254516,
+        "I(bmi_z^2)": 0.0489676
+      }
+    },
+    {
+      "id": "s__Bacteroides_faecis",
+      "prevalence": 0.18617318,
+      "mean_abundance": 0.16981973,
+      "residual_sd": 2.34437364,
+      "conformal_abs_residual_95": 5.77621232,
+      "coefficients": {
+        "(Intercept)": -1.16072773,
+        "age_z": -0.12292625,
+        "I(age_z^2)": -0.06042812,
+        "sex_male": 0.14117958,
+        "bmi_z": 0.06617315,
+        "I(bmi_z^2)": -0.02303923
+      }
+    },
+    {
+      "id": "s__Clostridium_symbiosum",
+      "prevalence": 0.18365922,
+      "mean_abundance": 0.01623402,
+      "residual_sd": 1.55226924,
+      "conformal_abs_residual_95": 3.65675487,
+      "coefficients": {
+        "(Intercept)": -1.87269749,
+        "age_z": 0.05324885,
+        "I(age_z^2)": 0.10574492,
+        "sex_male": 0.06143828,
+        "bmi_z": -0.10801632,
+        "I(bmi_z^2)": 0.05488992
+      }
+    },
+    {
+      "id": "s__Erysipelatoclostridium_ramosum",
+      "prevalence": 0.18268156,
+      "mean_abundance": 0.03941473,
+      "residual_sd": 1.84973914,
+      "conformal_abs_residual_95": 4.61080476,
+      "coefficients": {
+        "(Intercept)": -1.85605265,
+        "age_z": 0.15016571,
+        "I(age_z^2)": 0.17756403,
+        "sex_male": 0.10792987,
+        "bmi_z": -0.12498235,
+        "I(bmi_z^2)": 0.06166865
+      }
+    },
+    {
+      "id": "s__Catenibacterium_mitsuokai",
+      "prevalence": 0.18002793,
+      "mean_abundance": 0.17280071,
+      "residual_sd": 2.35000536,
+      "conformal_abs_residual_95": 5.78040365,
+      "coefficients": {
+        "(Intercept)": -1.4726478,
+        "age_z": -0.05923372,
+        "I(age_z^2)": 0.02305992,
+        "sex_male": 0.48455582,
+        "bmi_z": 0.14030656,
+        "I(bmi_z^2)": 0.01866533
+      }
+    },
+    {
+      "id": "s__Clostridium_sp_CAG_253",
+      "prevalence": 0.17486034,
+      "mean_abundance": 0.04541064,
+      "residual_sd": 1.75448488,
+      "conformal_abs_residual_95": 4.45303513,
+      "coefficients": {
+        "(Intercept)": -1.44020572,
+        "age_z": 0.04323568,
+        "I(age_z^2)": -0.04733789,
+        "sex_male": 0.01461072,
+        "bmi_z": 0.01665315,
+        "I(bmi_z^2)": -0.01259926
+      }
+    },
+    {
+      "id": "s__Ruminococcaceae_bacterium_D5",
+      "prevalence": 0.17039106,
+      "mean_abundance": 0.01038972,
+      "residual_sd": 1.27692242,
+      "conformal_abs_residual_95": 2.91715087,
+      "coefficients": {
+        "(Intercept)": -1.65953588,
+        "age_z": 0.10414955,
+        "I(age_z^2)": -0.02447072,
+        "sex_male": -0.17483401,
+        "bmi_z": -0.11427723,
+        "I(bmi_z^2)": 0.01309841
+      }
+    },
+    {
+      "id": "s__Firmicutes_bacterium_CAG_238",
+      "prevalence": 0.16871508,
+      "mean_abundance": 0.04364859,
+      "residual_sd": 1.68898046,
+      "conformal_abs_residual_95": 4.21745022,
+      "coefficients": {
+        "(Intercept)": -1.50934906,
+        "age_z": 0.1433461,
+        "I(age_z^2)": -0.02554169,
+        "sex_male": -0.0034355,
+        "bmi_z": -0.0545223,
+        "I(bmi_z^2)": -0.0073995
+      }
+    },
+    {
+      "id": "s__Monoglobus_pectinilyticus",
+      "prevalence": 0.16871508,
+      "mean_abundance": 0.06415126,
+      "residual_sd": 1.99637338,
+      "conformal_abs_residual_95": 4.90460425,
+      "coefficients": {
+        "(Intercept)": -1.36491699,
+        "age_z": -0.0616159,
+        "I(age_z^2)": 0.06502118,
+        "sex_male": -0.19359222,
+        "bmi_z": 0.09611815,
+        "I(bmi_z^2)": -0.04712809
+      }
+    },
+    {
+      "id": "s__Butyrivibrio_crossotus",
+      "prevalence": 0.16662011,
+      "mean_abundance": 0.80944575,
+      "residual_sd": 2.73948596,
+      "conformal_abs_residual_95": 7.07361282,
+      "coefficients": {
+        "(Intercept)": -1.05573688,
+        "age_z": 0.23864471,
+        "I(age_z^2)": -0.13110774,
+        "sex_male": 0.21973003,
+        "bmi_z": -0.1826483,
+        "I(bmi_z^2)": 0.01012468
+      }
+    },
+    {
+      "id": "s__Blautia_sp_CAG_257",
+      "prevalence": 0.16410615,
+      "mean_abundance": 0.06616373,
+      "residual_sd": 1.82260737,
+      "conformal_abs_residual_95": 4.5275435,
+      "coefficients": {
+        "(Intercept)": -1.81225555,
+        "age_z": 0.04199639,
+        "I(age_z^2)": 0.08018458,
+        "sex_male": 0.17866234,
+        "bmi_z": 0.083496,
+        "I(bmi_z^2)": 0.03631821
+      }
+    },
+    {
+      "id": "s__Victivallis_vadensis",
+      "prevalence": 0.16284916,
+      "mean_abundance": 0.02278827,
+      "residual_sd": 1.46138695,
+      "conformal_abs_residual_95": 3.50951556,
+      "coefficients": {
+        "(Intercept)": -1.66261283,
+        "age_z": 0.03473717,
+        "I(age_z^2)": -0.08424492,
+        "sex_male": 0.05704434,
+        "bmi_z": -0.122449,
+        "I(bmi_z^2)": 0.03212333
+      }
+    },
+    {
+      "id": "s__Prevotella_sp_CAG_279",
+      "prevalence": 0.16075419,
+      "mean_abundance": 0.31559013,
+      "residual_sd": 2.58435442,
+      "conformal_abs_residual_95": 6.5453481,
+      "coefficients": {
+        "(Intercept)": -1.46677631,
+        "age_z": 0.00357622,
+        "I(age_z^2)": -0.01445663,
+        "sex_male": 0.38617879,
+        "bmi_z": -0.08029072,
+        "I(bmi_z^2)": 0.12970038
+      }
+    },
+    {
+      "id": "s__Paraprevotella_clara",
+      "prevalence": 0.15768156,
+      "mean_abundance": 0.01544956,
+      "residual_sd": 1.40043724,
+      "conformal_abs_residual_95": 3.53533043,
+      "coefficients": {
+        "(Intercept)": -1.86564698,
+        "age_z": -0.06047291,
+        "I(age_z^2)": 0.01506153,
+        "sex_male": 0.21318876,
+        "bmi_z": -0.0609653,
+        "I(bmi_z^2)": 0.03497627
+      }
+    },
+    {
+      "id": "s__Parabacteroides_johnsonii",
+      "prevalence": 0.15740223,
+      "mean_abundance": 0.06797909,
+      "residual_sd": 1.84718078,
+      "conformal_abs_residual_95": 4.92622108,
+      "coefficients": {
+        "(Intercept)": -1.53555695,
+        "age_z": -0.00271722,
+        "I(age_z^2)": -0.03444064,
+        "sex_male": 0.03204826,
+        "bmi_z": -0.00811228,
+        "I(bmi_z^2)": 0.02464109
+      }
+    },
+    {
+      "id": "s__Dialister_sp_CAG_357",
+      "prevalence": 0.15656425,
+      "mean_abundance": 0.3948982,
+      "residual_sd": 2.63000772,
+      "conformal_abs_residual_95": 6.72164733,
+      "coefficients": {
+        "(Intercept)": -1.08711589,
+        "age_z": -0.19365738,
+        "I(age_z^2)": -0.12634819,
+        "sex_male": 0.04508633,
+        "bmi_z": -0.08570916,
+        "I(bmi_z^2)": 0.00643966
+      }
+    },
+    {
+      "id": "s__Clostridium_saccharolyticum",
+      "prevalence": 0.15223464,
+      "mean_abundance": 0.01082838,
+      "residual_sd": 1.30549578,
+      "conformal_abs_residual_95": 3.13179665,
+      "coefficients": {
+        "(Intercept)": -1.91362514,
+        "age_z": -0.03165321,
+        "I(age_z^2)": 0.02362799,
+        "sex_male": 0.12465293,
+        "bmi_z": 0.06299873,
+        "I(bmi_z^2)": 0.02451888
+      }
+    },
+    {
+      "id": "s__Bifidobacterium_animalis",
+      "prevalence": 0.15195531,
+      "mean_abundance": 0.09079156,
+      "residual_sd": 1.84777847,
+      "conformal_abs_residual_95": 4.75188711,
+      "coefficients": {
+        "(Intercept)": -1.40597499,
+        "age_z": 0.03863558,
+        "I(age_z^2)": -0.02990745,
+        "sex_male": -0.19223882,
+        "bmi_z": -0.0221845,
+        "I(bmi_z^2)": -0.01928983
+      }
+    },
+    {
+      "id": "s__Bacteroides_coprocola",
+      "prevalence": 0.15139665,
+      "mean_abundance": 0.23843804,
+      "residual_sd": 2.29840322,
+      "conformal_abs_residual_95": 6.05778588,
+      "coefficients": {
+        "(Intercept)": -1.5982913,
+        "age_z": -0.06022515,
+        "I(age_z^2)": -0.00779942,
+        "sex_male": 0.46832187,
+        "bmi_z": -0.20373441,
+        "I(bmi_z^2)": 0.06408751
+      }
+    },
+    {
+      "id": "s__Klebsiella_pneumoniae",
+      "prevalence": 0.15097765,
+      "mean_abundance": 0.17469412,
+      "residual_sd": 2.06458651,
+      "conformal_abs_residual_95": 5.08854755,
+      "coefficients": {
+        "(Intercept)": -1.82360395,
+        "age_z": 0.1293385,
+        "I(age_z^2)": 0.04240125,
+        "sex_male": 0.38893485,
+        "bmi_z": -0.37259124,
+        "I(bmi_z^2)": 0.10529477
+      }
+    },
+    {
+      "id": "s__Eisenbergiella_massiliensis",
+      "prevalence": 0.14874302,
+      "mean_abundance": 0.01584517,
+      "residual_sd": 1.35934972,
+      "conformal_abs_residual_95": 3.19077834,
+      "coefficients": {
+        "(Intercept)": -1.85347169,
+        "age_z": 0.02601737,
+        "I(age_z^2)": 0.02498962,
+        "sex_male": -0.0474141,
+        "bmi_z": -0.0573562,
+        "I(bmi_z^2)": 0.03119816
+      }
+    },
+    {
+      "id": "s__Alistipes_onderdonkii",
+      "prevalence": 0.14175978,
+      "mean_abundance": 0.03060938,
+      "residual_sd": 1.45001046,
+      "conformal_abs_residual_95": 3.4821322,
+      "coefficients": {
+        "(Intercept)": -1.70460001,
+        "age_z": 0.0169233,
+        "I(age_z^2)": -0.03153718,
+        "sex_male": -0.06378988,
+        "bmi_z": -0.06378435,
+        "I(bmi_z^2)": 0.01536621
+      }
+    },
+    {
+      "id": "s__Prevotella_stercorea",
+      "prevalence": 0.14162011,
+      "mean_abundance": 0.44791174,
+      "residual_sd": 2.37476102,
+      "conformal_abs_residual_95": 6.36528561,
+      "coefficients": {
+        "(Intercept)": -1.75335209,
+        "age_z": -0.07577878,
+        "I(age_z^2)": -0.00444242,
+        "sex_male": 0.49257766,
+        "bmi_z": -0.22994697,
+        "I(bmi_z^2)": 0.11451426
+      }
+    },
+    {
+      "id": "s__Sellimonas_intestinalis",
+      "prevalence": 0.13365922,
+      "mean_abundance": 0.02539474,
+      "residual_sd": 1.59821821,
+      "conformal_abs_residual_95": 4.12173227,
+      "coefficients": {
+        "(Intercept)": -1.83006936,
+        "age_z": -0.00347076,
+        "I(age_z^2)": 0.09310448,
+        "sex_male": -0.01839387,
+        "bmi_z": 0.03363975,
+        "I(bmi_z^2)": 0.00066199
+      }
+    },
+    {
+      "id": "s__Clostridium_sp_CAG_242",
+      "prevalence": 0.12793296,
+      "mean_abundance": 0.01884206,
+      "residual_sd": 1.45836397,
+      "conformal_abs_residual_95": 3.81241332,
+      "coefficients": {
+        "(Intercept)": -1.86734617,
+        "age_z": 0.09533011,
+        "I(age_z^2)": 0.04419238,
+        "sex_male": 0.07051838,
+        "bmi_z": -0.10484406,
+        "I(bmi_z^2)": 0.03979114
+      }
+    },
+    {
+      "id": "s__Megamonas_funiformis",
+      "prevalence": 0.12667598,
+      "mean_abundance": 0.09018178,
+      "residual_sd": 1.81294199,
+      "conformal_abs_residual_95": 4.80978763,
+      "coefficients": {
+        "(Intercept)": -1.8246517,
+        "age_z": -0.1131078,
+        "I(age_z^2)": -0.00920632,
+        "sex_male": 0.34707964,
+        "bmi_z": -0.10648059,
+        "I(bmi_z^2)": 0.03231565
+      }
+    },
+    {
+      "id": "s__Streptococcus_vestibularis",
+      "prevalence": 0.12667598,
+      "mean_abundance": 0.01548067,
+      "residual_sd": 1.22322447,
+      "conformal_abs_residual_95": 2.66155931,
+      "coefficients": {
+        "(Intercept)": -2.05226876,
+        "age_z": 0.1038878,
+        "I(age_z^2)": 0.11797644,
+        "sex_male": 0.15092006,
+        "bmi_z": 0.05818098,
+        "I(bmi_z^2)": -0.00128849
+      }
+    },
+    {
+      "id": "s__Desulfovibrionaceae_bacterium",
+      "prevalence": 0.12639665,
+      "mean_abundance": 0.0158973,
+      "residual_sd": 1.37502132,
+      "conformal_abs_residual_95": 3.57756738,
+      "coefficients": {
+        "(Intercept)": -1.81083212,
+        "age_z": 0.00024123,
+        "I(age_z^2)": -0.00926263,
+        "sex_male": 0.13269704,
+        "bmi_z": 0.00048144,
+        "I(bmi_z^2)": 0.00555309
+      }
+    },
+    {
+      "id": "s__Blautia_hydrogenotrophica",
+      "prevalence": 0.12486034,
+      "mean_abundance": 0.01057202,
+      "residual_sd": 1.25888324,
+      "conformal_abs_residual_95": 2.85976131,
+      "coefficients": {
+        "(Intercept)": -1.88322146,
+        "age_z": -0.04442578,
+        "I(age_z^2)": 0.01281426,
+        "sex_male": 0.00571936,
+        "bmi_z": 0.068875,
+        "I(bmi_z^2)": -0.01217718
+      }
+    },
+    {
+      "id": "s__Phascolarctobacterium_sp_CAG_266",
+      "prevalence": 0.12486034,
+      "mean_abundance": 0.10707603,
+      "residual_sd": 2.00237563,
+      "conformal_abs_residual_95": 5.68747922,
+      "coefficients": {
+        "(Intercept)": -1.38665725,
+        "age_z": 0.11462253,
+        "I(age_z^2)": -0.08621878,
+        "sex_male": -0.09530392,
+        "bmi_z": 0.00822065,
+        "I(bmi_z^2)": -0.00360262
+      }
+    },
+    {
+      "id": "s__Klebsiella_variicola",
+      "prevalence": 0.1222067,
+      "mean_abundance": 0.05858158,
+      "residual_sd": 1.71857299,
+      "conformal_abs_residual_95": 4.17695483,
+      "coefficients": {
+        "(Intercept)": -1.9894469,
+        "age_z": 0.08765088,
+        "I(age_z^2)": 0.05668948,
+        "sex_male": 0.31781758,
+        "bmi_z": -0.31537411,
+        "I(bmi_z^2)": 0.09004586
+      }
+    },
+    {
+      "id": "s__Clostridium_clostridioforme",
+      "prevalence": 0.12011173,
+      "mean_abundance": 0.02374685,
+      "residual_sd": 1.50008476,
+      "conformal_abs_residual_95": 3.71768742,
+      "coefficients": {
+        "(Intercept)": -2.03100286,
+        "age_z": 0.03897278,
+        "I(age_z^2)": 0.08120979,
+        "sex_male": 0.12325587,
+        "bmi_z": -0.00058221,
+        "I(bmi_z^2)": 0.06589816
+      }
+    },
+    {
+      "id": "s__Faecalitalea_cylindroides",
+      "prevalence": 0.1198324,
+      "mean_abundance": 0.04485607,
+      "residual_sd": 1.59088396,
+      "conformal_abs_residual_95": 4.07117803,
+      "coefficients": {
+        "(Intercept)": -1.70624417,
+        "age_z": 0.05894797,
+        "I(age_z^2)": -0.00148986,
+        "sex_male": -0.03390698,
+        "bmi_z": -0.0303386,
+        "I(bmi_z^2)": 0.00707456
+      }
+    },
+    {
+      "id": "s__Lactobacillus_ruminis",
+      "prevalence": 0.11731844,
+      "mean_abundance": 0.12437681,
+      "residual_sd": 2.00985321,
+      "conformal_abs_residual_95": 5.40774277,
+      "coefficients": {
+        "(Intercept)": -1.66403676,
+        "age_z": -0.18608685,
+        "I(age_z^2)": -0.01847194,
+        "sex_male": 0.25721145,
+        "bmi_z": 0.08746828,
+        "I(bmi_z^2)": -0.01068469
+      }
+    },
+    {
+      "id": "s__Bifidobacterium_dentium",
+      "prevalence": 0.11424581,
+      "mean_abundance": 0.02075013,
+      "residual_sd": 1.2851798,
+      "conformal_abs_residual_95": 2.82324034,
+      "coefficients": {
+        "(Intercept)": -2.19425624,
+        "age_z": 0.17417147,
+        "I(age_z^2)": 0.21422557,
+        "sex_male": 0.13279519,
+        "bmi_z": -0.05761237,
+        "I(bmi_z^2)": 0.03777947
+      }
+    },
+    {
+      "id": "s__Megamonas_hypermegale",
+      "prevalence": 0.11243017,
+      "mean_abundance": 0.0370389,
+      "residual_sd": 1.59484998,
+      "conformal_abs_residual_95": 4.19500328,
+      "coefficients": {
+        "(Intercept)": -1.91887126,
+        "age_z": -0.04721351,
+        "I(age_z^2)": -0.02592566,
+        "sex_male": 0.35728679,
+        "bmi_z": -0.09673091,
+        "I(bmi_z^2)": 0.05444952
+      }
+    },
+    {
+      "id": "s__Eubacterium_sp_OM08_24",
+      "prevalence": 0.11187151,
+      "mean_abundance": 0.02640444,
+      "residual_sd": 1.24641454,
+      "conformal_abs_residual_95": 2.45877936,
+      "coefficients": {
+        "(Intercept)": -2.04047152,
+        "age_z": -0.01637737,
+        "I(age_z^2)": 0.01134383,
+        "sex_male": 0.17163976,
+        "bmi_z": -0.08495828,
+        "I(bmi_z^2)": 0.02963277
+      }
+    },
+    {
+      "id": "s__Roseburia_sp_CAG_303",
+      "prevalence": 0.11131285,
+      "mean_abundance": 0.04384159,
+      "residual_sd": 1.6281272,
+      "conformal_abs_residual_95": 4.50844802,
+      "coefficients": {
+        "(Intercept)": -1.73972007,
+        "age_z": 0.05724506,
+        "I(age_z^2)": -0.01922397,
+        "sex_male": 0.05365464,
+        "bmi_z": -0.18754622,
+        "I(bmi_z^2)": 0.03228133
+      }
+    },
+    {
+      "id": "s__Acidaminococcus_intestini",
+      "prevalence": 0.10963687,
+      "mean_abundance": 0.13075826,
+      "residual_sd": 1.97996084,
+      "conformal_abs_residual_95": 5.46668375,
+      "coefficients": {
+        "(Intercept)": -1.69671637,
+        "age_z": -0.10754082,
+        "I(age_z^2)": -0.04340728,
+        "sex_male": 0.22441662,
+        "bmi_z": 0.19386349,
+        "I(bmi_z^2)": 0.04126787
+      }
+    },
+    {
+      "id": "s__Coprobacillus_cateniformis",
+      "prevalence": 0.10740223,
+      "mean_abundance": 0.01829353,
+      "residual_sd": 1.27623412,
+      "conformal_abs_residual_95": 3.0665499,
+      "coefficients": {
+        "(Intercept)": -1.97013019,
+        "age_z": 0.02375801,
+        "I(age_z^2)": 0.083601,
+        "sex_male": 0.02953855,
+        "bmi_z": 0.02930525,
+        "I(bmi_z^2)": 0.00176524
+      }
+    }
+  ]
+}
